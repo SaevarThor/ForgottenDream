@@ -6,12 +6,12 @@ using Photon.Pun;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private bool _isHoldingWeapon; 
-
-    private Weapon _currWeapon;
-
-    [SerializeField] private Transform _holdPos; 
+    [SerializeField] private Transform _clientHold; 
     public PhotonView View; 
+    public bool CanAttack; 
+    public bool HasWeapon; 
+    [SerializeField] private GameObject clientSpear, serverSpear; 
+    [SerializeField] private GameObject spearObject; 
 
     private PlayerActionControler _playerActionController;
     
@@ -38,34 +38,34 @@ public class PlayerAttack : MonoBehaviour
     private void Start() 
     {
         if (View.IsMine)
-            _playerActionController.Normal.Shoot.performed += _ =>  Attack();    
+        {
+            _playerActionController.Normal.Shoot.performed += _ =>  Attack();   
+            CanAttack = true;  
+        }
     }
 
     private void Attack()
     {
-        if (_currWeapon == null) return;
+        if (!HasWeapon || !View.IsMine || !CanAttack) return;
 
-        if (_currWeapon.DropAfterAttack)
-            ReleaseWeapon();
+        GameObject g = PhotonNetwork.Instantiate(spearObject.name, _clientHold.transform.position, _clientHold.transform.rotation); 
+        Weapon currWeapon = g.GetComponent<Weapon>();
+        currWeapon.Attack(2, this);  
 
-        _currWeapon.Attack();  
+        HideWeapon(); 
     }
 
-    public void PickUpWeapon(Weapon weapon)
+    private void HideWeapon()
     {
-        if (_isHoldingWeapon)
-            ReleaseWeapon(); 
-
-        _currWeapon = weapon; 
-
-        _currWeapon.transform.parent = _holdPos; 
-        _currWeapon.transform.rotation = _holdPos.rotation; 
+        serverSpear.SetActive(false);
+        clientSpear.SetActive(false); 
+        HasWeapon = false;
     }
 
-    private void ReleaseWeapon()
+    public void PickUpWeapon()
     {
-        _currWeapon.transform.parent = null; 
-        _currWeapon.IsAttacking = false; 
-        _currWeapon.Body.isKinematic = false;
+        serverSpear.SetActive(true); 
+        // clientSpear.SetActive(true); 
+        HasWeapon = true; 
     }
 }

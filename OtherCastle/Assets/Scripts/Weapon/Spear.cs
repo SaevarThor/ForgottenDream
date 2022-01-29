@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class Spear : Weapon
 {
-    private float throwPower = 400; 
+    private float throwPower = 200; 
+    private PlayerAttack owner; 
 
-    public override void Attack()
+    void Start()
     {
-        //Play Animation
-        StartCoroutine(Release()); 
-    }
-
-    private IEnumerator Release()
-    {
-        yield return new WaitForSeconds(.5f);
         Body.AddForce(transform.forward * throwPower); 
-
     }
 }

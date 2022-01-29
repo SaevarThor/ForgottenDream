@@ -16,7 +16,7 @@ public class Interaction : MonoBehaviour
     
     // private KeyCode _interactKey => InputManager.Instance.InteractKey; 
     private PlayerActionControler _playerActionController;
-    private bool _canInteract = true; 
+    public bool CanInteract = true; 
     Ray _ray; 
 
     private PhotonView View; 
@@ -43,15 +43,15 @@ public class Interaction : MonoBehaviour
 
     private void Start() 
     {
-        if (View.IsMine)
+        if (View.IsMine && CanInteract)
             _playerActionController.Normal.Interact.performed += _ =>  Interact();    
     }
 
     private void Update()
     {
-       /* if (!_canInteract && View.IsMine) return;
+       if (!CanInteract && !View.IsMine) return;
 
-        _image.enabled = !Dialogue.Instance.ActiveDialogue;
+        // _image.enabled = !Dialogue.Instance.ActiveDialogue;
         
         _ray = _camera.ViewportPointToRay(new Vector3(.5f,.5f,0)); 
 
@@ -60,24 +60,24 @@ public class Interaction : MonoBehaviour
 
         if (Physics.Raycast(_ray, out hit, _range))
         {
-            if (hit.collider.CompareTag(InteractibleTag))
-                _image.sprite = _hand; 
-            else
-                _image.sprite = _crosshair; 
-        } else 
-            _image.sprite = _crosshair; */
+            // print (hit.collider.name); 
+            // if (hit.collider.CompareTag(InteractibleTag))
+                // _image.sprite = _hand; 
+            // else
+                // _image.sprite = _crosshair; 
+        } 
+        // else 
+            // _image.sprite = _crosshair; 
 
     }
 
     public void Interact()
     {
-        print ("Itneract"); 
         RaycastHit hit; 
-        // _ray = new Ray();
+        Ray ray = _camera.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
 
         if (Physics.Raycast(_ray, out hit, _range))
         {
-            print (hit.collider.name); 
             if (hit.collider.CompareTag(InteractibleTag))
                 hit.transform.GetComponent<IInteractible>().Interact(_controller);
         }

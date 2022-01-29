@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 	public bool SlideWhenOverSlopeLimit; 
 	public bool SlideOnTaggedObjects; 
 	public PlayerAttack Attack; 
+	public Interaction Interaction; 
 
 	public bool CantMove; 
 	
@@ -167,11 +168,16 @@ public class PlayerController : MonoBehaviour
 	public void SetMovement(bool value)
 	{
 		CantMove = !value; 
+		Interaction.CanInteract = value; 
+		Attack.CanAttack = value; 
 	}
 
-	public void KillPlayer(string killerName)
+	public void KillPlayer(string killerName, int actorID)
 	{
-		print ("YOU DIED"); 
+		if (View.Owner.ActorNumber != actorID)
+		{
+			print ($"You were killed by {killerName}");
+		}
 	}
 
 	public void TeleportPlayer(Vector3 destination)
