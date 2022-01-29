@@ -344,7 +344,7 @@ Material:
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
     - _Anisotropy: 0
-    - _BarkAORemapMax: 1
+    - _BarkAORemapMax: 0.147
     - _BarkAORemapMin: 0
     - _BarkMetallic: 1
     - _BarkNormalScale: 1
@@ -585,7 +585,7 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentWritingVelocity: 0
     - _TransparentZWrite: 0
-    - _TrunkAORemapMax: 1
+    - _TrunkAORemapMax: 0.137
     - _TrunkAORemapMin: 0
     - _TrunkMetallic: 1
     - _TrunkNormalScale: 1

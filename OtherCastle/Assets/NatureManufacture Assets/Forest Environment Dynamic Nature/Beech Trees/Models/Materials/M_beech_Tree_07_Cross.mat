@@ -141,7 +141,7 @@ Material:
     - WIND_SETTINGS_GustWorldScale: 0
     - WIND_SETTINGS_ShiverNoiseScale: 0
     - WIND_SETTINGS_Turbulence: 0
-    - _AORemapMax: 1
+    - _AORemapMax: 0.096
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
@@ -169,7 +169,7 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
-    - _DiffusionProfileHash: 2.64331
+    - _DiffusionProfileHash: 3.7708874
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -288,7 +288,7 @@ Material:
     - _BaseColor: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
-    - _DiffusionProfileAsset: {r: -1.8019567e-30, g: 2.8583547e+22, b: 2.0825967e+12, a: 8.838735e-11}
+    - _DiffusionProfileAsset: {r: -1.38019604e-11, g: -4.141434e-17, b: -2.2703884, a: 5.7375117e-13}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _DryColor: {r: 0.8018868, g: 0.7371864, b: 0.7073247, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -307,3 +307,18 @@ Material:
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
     - _VertexNormalMultiply: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &7429527706141043974
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa486462e6be1764e89c788ba30e61f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DiffusionProfileReferences:
+  - {fileID: 11400000, guid: 81ce72ad6cfd3ea40b4e11c0217f212b, type: 2}
+  m_MaterialReferences: []
