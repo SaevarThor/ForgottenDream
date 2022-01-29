@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake() 
 	{
+		//DontDestroyOnLoad(this);
+
 		View = GetComponent<PhotonView>(); 
 
 		if (View.IsMine)
@@ -174,9 +176,10 @@ public class PlayerController : MonoBehaviour
 
 	public void KillPlayer(string killerName, int actorID)
 	{
-		if (View.Owner.ActorNumber != actorID)
+		if (View.Owner.ActorNumber != actorID && View.IsMine)
 		{
 			print ($"You were killed by {killerName}");
+			TeleportPlayer(GamePlayManager.Instance.GetRespawnPoint()); 
 		}
 	}
 

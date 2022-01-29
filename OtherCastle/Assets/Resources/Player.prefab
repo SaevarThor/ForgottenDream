@@ -287,7 +287,7 @@ MonoBehaviour:
   HasWeapon: 0
   clientSpear: {fileID: 2354398499007925062}
   serverSpear: {fileID: 2567081619095927709}
-  spearObject: {fileID: 7075970022698525524, guid: 9b61b6de8537c3b44b17b5a270c4690a, type: 3}
+  spearObject: {fileID: 7368028582206681628, guid: 06614b37d2da10b4fa01c8227264b9d7, type: 3}
 --- !u!114 &1336411698672248939
 MonoBehaviour:
   m_ObjectHideFlags: 0
