@@ -162,7 +162,7 @@ Material:
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
     - _Anisotropy: 0
-    - _BaseAORemapMax: 1
+    - _BaseAORemapMax: 0.122
     - _BaseAORemapMin: 0
     - _BaseMetallic: 1
     - _BaseNormalScale: 1
@@ -172,7 +172,7 @@ Material:
     - _BlendMode: 0
     - _CoatMask: 0
     - _ConservativeDepthOffsetEnable: 0
-    - _CoverAORemapMax: 1
+    - _CoverAORemapMax: 0.122
     - _CoverAORemapMin: 0
     - _CoverHardness: 5
     - _CoverHeightMapMax: 1
