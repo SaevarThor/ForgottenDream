@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 	public bool ToggleRun; 
 	public bool SlideWhenOverSlopeLimit; 
 	public bool SlideOnTaggedObjects; 
+	public PlayerAttack Attack; 
 
 	public bool CantMove; 
 	
@@ -166,6 +167,11 @@ public class PlayerController : MonoBehaviour
 	public void SetMovement(bool value)
 	{
 		CantMove = !value; 
+	}
+
+	public void KillPlayer(string killerName)
+	{
+		print ("YOU DIED"); 
 	}
 
 	public void TeleportPlayer(Vector3 destination)
