@@ -95,7 +95,7 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 13.286705, g: 59.017693, b: 32.44428, a: 0}
     - _GlowColor: {r: 0.082352936, g: 0.36862746, b: 0.32647172, a: 0}
-    - _InnerGlowColor: {r: 22.21448, g: 48.55123, b: 40.05002, a: 0}
+    - _InnerGlowColor: {r: 0, g: 3.716747, b: 3.0932002, a: 0}
     - _InnerGlowPosition: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
