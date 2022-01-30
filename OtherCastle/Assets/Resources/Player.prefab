@@ -196,6 +196,7 @@ MonoBehaviour:
   - {fileID: 7579401787479080568}
   - {fileID: 325243668529215172}
   _playerCanvas: {fileID: 3751605929491851848}
+  _explosion: {fileID: 761091235694061562, guid: f08fafa6f840e3343931a50f782516bd, type: 3}
 --- !u!143 &7345327874257166038
 CharacterController:
   m_ObjectHideFlags: 0

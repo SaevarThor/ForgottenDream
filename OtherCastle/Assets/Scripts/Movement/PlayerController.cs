@@ -182,6 +182,12 @@ public class PlayerController : MonoBehaviour
 		Attack.CanAttack = value; 
 	}
 
+	[ContextMenu("Test Murder")]
+	public void TestMurder()
+	{
+		KillPlayer("Homo man", 69); 
+	}
+
 	public void KillPlayer(string killerName, int actorID)
 	{
 		if (View.Owner.ActorNumber != actorID && View.IsMine)
