@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: Dona_Hawk
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: e54c292b-728d-4a43-b49e-58a2c7e1bbe1
+    TargetNodeGUID: 36af4157-b65a-4ae9-b84e-f638ff71c7b6
+    TypeID: 0
+  - PortName: Oh.. religion, yeah I don't want that
+    BaseNodeGUID: 36af4157-b65a-4ae9-b84e-f638ff71c7b6
+    TargetNodeGUID: 38862067-58de-42d2-9591-5a8f973b099f
+    TypeID: 0
+  - PortName: 'Yeah sure, bye '
+    BaseNodeGUID: 38862067-58de-42d2-9591-5a8f973b099f
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Thank you
+    BaseNodeGUID: 36af4157-b65a-4ae9-b84e-f638ff71c7b6
+    TargetNodeGUID: 8afb807b-f47d-4d5b-93ca-8c3e38f694f4
+    TypeID: 0
+  - PortName: I want to learn about you
+    BaseNodeGUID: 8afb807b-f47d-4d5b-93ca-8c3e38f694f4
+    TargetNodeGUID: da12df45-a788-4d98-8218-93e1e7b09771
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: da12df45-a788-4d98-8218-93e1e7b09771
+    TargetNodeGUID: 921709a2-5633-462a-bbd5-9d6654f820a7
+    TypeID: 0
+  - PortName: I want to learn about Wallinism
+    BaseNodeGUID: 8afb807b-f47d-4d5b-93ca-8c3e38f694f4
+    TargetNodeGUID: 48169a71-47de-4d0e-9bac-b7bad4fbba57
+    TypeID: 0
+  - PortName: I bring the end, for i am the harbinger of destruction
+    BaseNodeGUID: 8afb807b-f47d-4d5b-93ca-8c3e38f694f4
+    TargetNodeGUID: a3b6b202-f834-40a6-987f-2707ee187e74
+    TypeID: 0
+  - PortName: Oh okay, that's all i needed thanks
+    BaseNodeGUID: 48169a71-47de-4d0e-9bac-b7bad4fbba57
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Huh, what about sitting, do you never sit down ?
+    BaseNodeGUID: 48169a71-47de-4d0e-9bac-b7bad4fbba57
+    TargetNodeGUID: b48a871d-167d-4db1-bdc4-07ec8828cb33
+    TypeID: 0
+  - PortName: Huh, alright
+    BaseNodeGUID: b48a871d-167d-4db1-bdc4-07ec8828cb33
+    TargetNodeGUID: c82dac14-1ca1-4e42-b45b-7bb24ea2d1de
+    TypeID: 0
+  - PortName: Is that all Wallinism is about ?
+    BaseNodeGUID: 48169a71-47de-4d0e-9bac-b7bad4fbba57
+    TargetNodeGUID: 47e7f778-5979-4cfe-a676-4a20ec4e7d47
+    TypeID: 0
+  - PortName: Wow, okay
+    BaseNodeGUID: 47e7f778-5979-4cfe-a676-4a20ec4e7d47
+    TargetNodeGUID: c82dac14-1ca1-4e42-b45b-7bb24ea2d1de
+    TypeID: 0
+  - PortName: I guess not, goodbye
+    BaseNodeGUID: c82dac14-1ca1-4e42-b45b-7bb24ea2d1de
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: I still want to learn more about you
+    BaseNodeGUID: c82dac14-1ca1-4e42-b45b-7bb24ea2d1de
+    TargetNodeGUID: da12df45-a788-4d98-8218-93e1e7b09771
+    TypeID: 0
+  - PortName: Ah shucks, you got me there
+    BaseNodeGUID: a3b6b202-f834-40a6-987f-2707ee187e74
+    TargetNodeGUID: c82dac14-1ca1-4e42-b45b-7bb24ea2d1de
+    TypeID: 0
+  - PortName: Fool! maybe I shrunk in some strange circumstances
+    BaseNodeGUID: a3b6b202-f834-40a6-987f-2707ee187e74
+    TargetNodeGUID: bbdeaa5e-2115-4031-87a9-d57cc4959b39
+    TypeID: 0
+  - PortName: You're right i'm sorry
+    BaseNodeGUID: bbdeaa5e-2115-4031-87a9-d57cc4959b39
+    TargetNodeGUID: 6254edca-0d28-47f6-8472-08218198c0b9
+    TypeID: 0
+  - PortName: Nothing for now, goodbye
+    BaseNodeGUID: 6254edca-0d28-47f6-8472-08218198c0b9
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: NO, I AM THE END AND I WILL DEVOUR THIS WORLD, GOODBYE!
+    BaseNodeGUID: bbdeaa5e-2115-4031-87a9-d57cc4959b39
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Tell me about yourself
+    BaseNodeGUID: 6254edca-0d28-47f6-8472-08218198c0b9
+    TargetNodeGUID: da12df45-a788-4d98-8218-93e1e7b09771
+    TypeID: 0
+  - PortName: Oh, nothing righ tnow i'll be on my way
+    BaseNodeGUID: 8afb807b-f47d-4d5b-93ca-8c3e38f694f4
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: That is so cool
+    BaseNodeGUID: 921709a2-5633-462a-bbd5-9d6654f820a7
+    TargetNodeGUID: 6876aa91-45de-4f8b-b3fe-b0f9b42c1607
+    TypeID: 0
+  - PortName: Yup
+    BaseNodeGUID: 6876aa91-45de-4f8b-b3fe-b0f9b42c1607
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Yup
+    BaseNodeGUID: 6876aa91-45de-4f8b-b3fe-b0f9b42c1607
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Yup
+    BaseNodeGUID: 6876aa91-45de-4f8b-b3fe-b0f9b42c1607
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Err..that's a little more extreme than what i expected
+    BaseNodeGUID: 921709a2-5633-462a-bbd5-9d6654f820a7
+    TargetNodeGUID: ed50b097-045a-419b-9d17-834bd71c4171
+    TypeID: 0
+  - PortName: I guess it's good you found religion then
+    BaseNodeGUID: ed50b097-045a-419b-9d17-834bd71c4171
+    TargetNodeGUID: adb4296c-a087-40a4-8b68-7188fcae1f93
+    TypeID: 0
+  - PortName: Okay, goodbye!
+    BaseNodeGUID: adb4296c-a087-40a4-8b68-7188fcae1f93
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: That is so rad
+    BaseNodeGUID: ed50b097-045a-419b-9d17-834bd71c4171
+    TargetNodeGUID: ab046a07-e331-450a-a754-27ff8eba6b86
+    TypeID: 0
+  - PortName: Yeah totally, rock on
+    BaseNodeGUID: ab046a07-e331-450a-a754-27ff8eba6b86
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  - PortName: Have fun
+    BaseNodeGUID: ab046a07-e331-450a-a754-27ff8eba6b86
+    TargetNodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: 38862067-58de-42d2-9591-5a8f973b099f
+    Position: {x: 1076, y: 442}
+    DialogueText: You will be back once you see the light, the wall has foreseen
+      it
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 36af4157-b65a-4ae9-b84e-f638ff71c7b6
+    Position: {x: 551, y: 180}
+    DialogueText: Welcome to the Church of the Wall young one
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 8afb807b-f47d-4d5b-93ca-8c3e38f694f4
+    Position: {x: 990, y: -27}
+    DialogueText: So what brings you to me ?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a3b6b202-f834-40a6-987f-2707ee187e74
+    Position: {x: 1598, y: 99}
+    DialogueText: You are very obviously not the harbinger of destruction, I've met
+      her and she is definately taller than you
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 48169a71-47de-4d0e-9bac-b7bad4fbba57
+    Position: {x: 1425, y: -377}
+    DialogueText: Wallinism is our way of life, it teaches us to remain stoic and
+      to stand our ground. Also to more or less just not really do anything except
+      stand around.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: b48a871d-167d-4db1-bdc4-07ec8828cb33
+    Position: {x: 2533, y: -563}
+    DialogueText: No, never. Does the great wall ever sit down? Certainly not.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 47e7f778-5979-4cfe-a676-4a20ec4e7d47
+    Position: {x: 2706, y: -351}
+    DialogueText: Yes, that's about it
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c82dac14-1ca1-4e42-b45b-7bb24ea2d1de
+    Position: {x: 3238, y: -280}
+    DialogueText: Is there anything else I can help you with ?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: bbdeaa5e-2115-4031-87a9-d57cc4959b39
+    Position: {x: 2520, y: 99}
+    DialogueText: Mhmm.. would you like to continue your little play or shoudl we
+      converse like normal people ?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 921709a2-5633-462a-bbd5-9d6654f820a7
+    Position: {x: 4453, y: -256}
+    DialogueText: 'Well, I used to steal artifacts for fun in my younger years. I
+      also committed arson most weekends. '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 6876aa91-45de-4f8b-b3fe-b0f9b42c1607
+    Position: {x: 5198, y: -75}
+    DialogueText: Not anymore. The only cool thing now is the Wall, and standing
+      around.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: adb4296c-a087-40a4-8b68-7188fcae1f93
+    Position: {x: 5935, y: -200}
+    DialogueText: Oh yes, it has really helped. But i must really get back to my
+      meditation
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ed50b097-045a-419b-9d17-834bd71c4171
+    Position: {x: 5152, y: -432}
+    DialogueText: I was a bit of a wild child, hanging out with gators and lizards
+      and running cons throughout the multiverse
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ab046a07-e331-450a-a754-27ff8eba6b86
+    Position: {x: 6058, y: -480}
+    DialogueText: What is truly rad is serving the Wall, that is the wildest thing
+      I've ever done. But now i must be back to my meditation.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ab05c35e-d173-472c-82b9-63e062e791a1
+    Position: {x: 6923, y: 92}
+    DialogueText: END
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 6254edca-0d28-47f6-8472-08218198c0b9
+    Position: {x: 3260, y: 39}
+    DialogueText: That's okay, everyone has their episodes, now what else can i help
+      you with?
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas:
+  - NodeGUID: da12df45-a788-4d98-8218-93e1e7b09771
+    Position: {x: 4037, y: -255}
+    AnswerNodeID: 4
+    AnswerNodeValue: 0
+  ExposedProperties: []

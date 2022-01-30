@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: Rafael_Ridley
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: 422ce5fe-97d3-4100-950f-51c132d3e2b9
+    TargetNodeGUID: e8d96bcd-8e44-486f-a174-915cf8b60984
+    TypeID: 0
+  - PortName: Hey
+    BaseNodeGUID: e8d96bcd-8e44-486f-a174-915cf8b60984
+    TargetNodeGUID: 66fe4be4-e1bb-4348-92fe-b5a074c75e73
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: 66fe4be4-e1bb-4348-92fe-b5a074c75e73
+    TargetNodeGUID: ea5c484e-e38b-4e5d-bfde-a0099a5ce40b
+    TypeID: 0
+  - PortName: I didn't even ask you anything
+    BaseNodeGUID: ea5c484e-e38b-4e5d-bfde-a0099a5ce40b
+    TargetNodeGUID: d399f1fd-7555-44d1-b542-3116a091fff9
+    TypeID: 0
+  - PortName: Righto..
+    BaseNodeGUID: d399f1fd-7555-44d1-b542-3116a091fff9
+    TargetNodeGUID: 15c65065-97bc-4f69-b75e-ed501eff6d79
+    TypeID: 0
+  - PortName: Err, that's pretty bad
+    BaseNodeGUID: ea5c484e-e38b-4e5d-bfde-a0099a5ce40b
+    TargetNodeGUID: 1888920d-cf44-45dd-844c-ad7329f98101
+    TypeID: 0
+  - PortName: 'Yikes, you should probably do something about that '
+    BaseNodeGUID: 1888920d-cf44-45dd-844c-ad7329f98101
+    TargetNodeGUID: d6d0d093-a9c6-4688-a2bf-44f582f9bcf3
+    TypeID: 0
+  - PortName: Alright then.. good luck with that
+    BaseNodeGUID: d6d0d093-a9c6-4688-a2bf-44f582f9bcf3
+    TargetNodeGUID: 15c65065-97bc-4f69-b75e-ed501eff6d79
+    TypeID: 0
+  - PortName: Bye
+    BaseNodeGUID: e8d96bcd-8e44-486f-a174-915cf8b60984
+    TargetNodeGUID: 15c65065-97bc-4f69-b75e-ed501eff6d79
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: e8d96bcd-8e44-486f-a174-915cf8b60984
+    Position: {x: 609, y: 200}
+    DialogueText: Hello
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ea5c484e-e38b-4e5d-bfde-a0099a5ce40b
+    Position: {x: 1200, y: 200}
+    DialogueText: FINE, YOU'VE FOUND ME OUT. I'M A TERRIBLE QUARTERMASTER, WE HAVE
+      COMPLETELY RUN OUT OF SUPPLIES!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 15c65065-97bc-4f69-b75e-ed501eff6d79
+    Position: {x: 3177, y: 214}
+    DialogueText: End
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d399f1fd-7555-44d1-b542-3116a091fff9
+    Position: {x: 2314, y: 345}
+    DialogueText: Oh you didn't ? uh.. just ignore what i said, everything is fine
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d6d0d093-a9c6-4688-a2bf-44f582f9bcf3
+    Position: {x: 2691, y: -72}
+    DialogueText: Yeah i guess.. i'll get around to it tomorrow maybe
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 1888920d-cf44-45dd-844c-ad7329f98101
+    Position: {x: 2047, y: -72}
+    DialogueText: DEVASTATING, WE ARE ALL GOING TO DIE OF HUNGER WITHIN DAYS
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas:
+  - NodeGUID: 66fe4be4-e1bb-4348-92fe-b5a074c75e73
+    Position: {x: 866, y: 179}
+    AnswerNodeID: 4
+    AnswerNodeValue: 3
+  ExposedProperties: []

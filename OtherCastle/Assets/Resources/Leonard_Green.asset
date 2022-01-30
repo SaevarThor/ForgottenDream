@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: Leonard_Green
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: 580491ec-4ca7-45fe-a043-43cfb21e5c04
+    TargetNodeGUID: 3bdac44c-044c-4645-ad85-51af0b488d1e
+    TypeID: 0
+  - PortName: Good morning
+    BaseNodeGUID: 3bdac44c-044c-4645-ad85-51af0b488d1e
+    TargetNodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    TypeID: 0
+  - PortName: Good day
+    BaseNodeGUID: 3bdac44c-044c-4645-ad85-51af0b488d1e
+    TargetNodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    TypeID: 0
+  - PortName: Good evening
+    BaseNodeGUID: 3bdac44c-044c-4645-ad85-51af0b488d1e
+    TargetNodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    TypeID: 0
+  - PortName: Nothing brought me here
+    BaseNodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    TargetNodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    TypeID: 0
+  - PortName: The ever fluttering wings of fate my dear friend
+    BaseNodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    TargetNodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    TypeID: 0
+  - PortName: My feet
+    BaseNodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    TargetNodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    TypeID: 0
+  - PortName: It's meaningless, it is just an orb
+    BaseNodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    TargetNodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    TypeID: 0
+  - PortName: The faint luminescence reminds my of days as a young child playing
+      in thunderstorms
+    BaseNodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    TargetNodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    TypeID: 0
+  - PortName: It must represent a higher power, something much greater than ourselves
+    BaseNodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    TargetNodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    TypeID: 0
+  - PortName: Wait.. this orb helps you talk to trees ?
+    BaseNodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    TargetNodeGUID: a5741984-522b-4ec3-9785-53d86a4ab647
+    TypeID: 0
+  - PortName: That sounds insane
+    BaseNodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    TargetNodeGUID: a5741984-522b-4ec3-9785-53d86a4ab647
+    TypeID: 0
+  - PortName: I thought it was an art piece
+    BaseNodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    TargetNodeGUID: a5741984-522b-4ec3-9785-53d86a4ab647
+    TypeID: 0
+  - PortName: Huh.. well alright then
+    BaseNodeGUID: a5741984-522b-4ec3-9785-53d86a4ab647
+    TargetNodeGUID: a9e6ce9e-af10-4648-9991-5d3ea35fe69a
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: 3bdac44c-044c-4645-ad85-51af0b488d1e
+    Position: {x: 639, y: 190}
+    DialogueText: Good day to you
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: e04ca172-6e2f-4a14-a67c-b3fd31171553
+    Position: {x: 982, y: 200}
+    DialogueText: What brings you to the Orb ?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c93bde58-4dcd-4984-9312-8b8e8038da7a
+    Position: {x: 1518, y: 210}
+    DialogueText: Interesting, and what do you make of the Orb so far ?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 03abbf2e-731b-4510-8cd7-c561656cce56
+    Position: {x: 2318, y: 226}
+    DialogueText: Hahahaha, what a stupid thing to say. I made this Orb eons ago
+      to serve as a conduit between myself and one of the oak trees outside
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a5741984-522b-4ec3-9785-53d86a4ab647
+    Position: {x: 3435, y: 240}
+    DialogueText: Yes, now begone. I have things to do
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a9e6ce9e-af10-4648-9991-5d3ea35fe69a
+    Position: {x: 3973, y: 240}
+    DialogueText: End
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas: []
+  ExposedProperties: []
