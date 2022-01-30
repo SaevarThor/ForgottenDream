@@ -287,7 +287,8 @@ public class Dialogue : MonoBehaviour
                 // return true; 
             case 1:
                 Debug.Log("Checking if has item"); 
-                return _currPlayer.Inventory.HasItem(node.AnswerNodeValue);
+                //return _currPlayer.Inventory.HasItem(node.AnswerNodeValue);
+                return true;
             case 2:
                 //Check if has Trait and return accordingly
                 break; 

@@ -307,8 +307,8 @@ MonoBehaviour:
   _camera: {fileID: 7229577128738624762}
   _range: 2
   _image: {fileID: 1598443567756239785}
-  _crosshair: {fileID: 21300000, guid: 8e8b19983c1c756439d8783d4b985d60, type: 3}
-  _hand: {fileID: 21300000, guid: b8d824c991b2e974099120b1bda1075a, type: 3}
+  _crosshair: {fileID: 21300000, guid: 4dbf799c14445834d98d749f1a09bf4b, type: 3}
+  _hand: {fileID: 21300000, guid: 54d536ed92141924090a5aaa414bfa6c, type: 3}
   CanInteract: 1
 --- !u!1 &7212449526641934768
 GameObject:
