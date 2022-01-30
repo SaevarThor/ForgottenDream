@@ -11,10 +11,19 @@ public class Weapon : MonoBehaviour
     public Rigidbody Body; 
     private PhotonView view; 
 
+    public float AttackPower;
+
     private void Awake()
     {
         Body = GetComponent<Rigidbody>();
         view = GetComponent<PhotonView>();
+
+        Destroy(this, 1f); 
+    }
+
+    private void Start()
+    {
+        Body.AddForce(transform.forward * AttackPower); 
     }
 
     public virtual void Attack(float power, PlayerAttack attack){}

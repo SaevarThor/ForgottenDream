@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Spear : Weapon
 {
-    private float throwPower = 200; 
-    private PlayerAttack owner; 
+    // [SerializeField] private float throwPower = 200; 
+    // private PlayerAttack owner; 
+
+    // public Vector3 dir => this.transform.forward; 
 
     void Start()
     {
-        Body.AddForce(transform.forward * throwPower); 
+        // Body.AddForce(transform.forward * throwPower); 
     }
 }

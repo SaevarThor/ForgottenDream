@@ -44,9 +44,11 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private Animator _anim; 
 	[SerializeField] private SkinnedMeshRenderer[] renders; 
 
+	[SerializeField] private GameObject _playerCanvas; 
+
 	private void Awake() 
 	{
-		//DontDestroyOnLoad(this);
+		DontDestroyOnLoad(this);
 
 		View = GetComponent<PhotonView>(); 
 
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
 	{
 		if (!View.IsMine) return; 
 
+		_playerCanvas.SetActive(true); 
 
 		foreach(var r in renders)
 			r.enabled = false; 

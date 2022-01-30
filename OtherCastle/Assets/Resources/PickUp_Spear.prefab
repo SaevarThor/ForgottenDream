@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spearVisual: {fileID: 2571540832201627105}
   respawnTimer: 30
+  PV: {fileID: 2305709895569513580}
 --- !u!65 &1598339082635447228
 BoxCollider:
   m_ObjectHideFlags: 0

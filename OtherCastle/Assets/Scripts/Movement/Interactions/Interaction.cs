@@ -53,31 +53,30 @@ public class Interaction : MonoBehaviour
 
         // _image.enabled = !Dialogue.Instance.ActiveDialogue;
         
-       // _ray = _camera.ViewportPointToRay(new Vector3(.5f,.5f,0)); 
+       _ray = _camera.ViewportPointToRay(new Vector3(.5f,.5f,0)); 
 
-        //Check for interactible to change UI elements
-        //RaycastHit hit; 
-
-        //if (Physics.Raycast(_ray, out hit, _range))
-        //{
-            // print (hit.collider.name); 
-            // if (hit.collider.CompareTag(InteractibleTag))
-                // _image.sprite = _hand; 
-            // else
-                // _image.sprite = _crosshair; 
-        //} 
-        // else 
-            // _image.sprite = _crosshair; 
+        RaycastHit hit; 
+        if (Physics.Raycast(_ray, out hit, _range))
+        {
+            if (hit.collider.CompareTag(InteractibleTag))
+                _image.sprite = _hand; 
+            else
+                _image.sprite = _crosshair; 
+        } 
+        else 
+            _image.sprite = _crosshair; 
 
     }
 
     public void Interact()
     {
+        print ("Interact"); 
         RaycastHit hit; 
         Ray ray = _camera.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
 
         if (Physics.Raycast(_ray, out hit, _range))
         {
+            print (hit.collider.name); 
             if (hit.collider.CompareTag(InteractibleTag))
                 hit.transform.GetComponent<IInteractible>().Interact(_controller);
         }
