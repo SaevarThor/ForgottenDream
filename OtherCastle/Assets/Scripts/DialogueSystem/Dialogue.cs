@@ -58,7 +58,7 @@ public class Dialogue : MonoBehaviour
     public void StartDialogue(DialogueContainer dialogue, PlayerController player, string characterName, Sprite characterPortrait = null)
     {
         _currentDialogue = dialogue; 
-        NameText.text = name; 
+        NameText.text = characterName; 
 
         if (characterPortrait != null)
         {
