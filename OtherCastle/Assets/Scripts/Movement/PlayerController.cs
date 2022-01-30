@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private SkinnedMeshRenderer[] renders; 
 
 	[SerializeField] private GameObject _playerCanvas; 
+	[SerializeField] private GameObject _explosion; 
 
 	private void Awake() 
 	{
@@ -186,6 +187,7 @@ public class PlayerController : MonoBehaviour
 		if (View.Owner.ActorNumber != actorID && View.IsMine)
 		{
 			print ($"You were killed by {killerName}");
+			PhotonNetwork.Instantiate(_explosion.name, transform.position, transform.rotation); 
 			TeleportPlayer(GamePlayManager.Instance.GetRespawnPoint()); 
 		}
 	}
