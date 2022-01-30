@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: ThreeToedTank
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: 0eb83417-1ea3-4dd0-b19d-c1d1b288cb9f
+    TargetNodeGUID: 6af2f5b5-02da-4e05-b928-6087600e65c9
+    TypeID: 0
+  - PortName: Eyy buddy! What are you doing here?
+    BaseNodeGUID: 6af2f5b5-02da-4e05-b928-6087600e65c9
+    TargetNodeGUID: 3757ffcc-789a-4148-afb6-5c95e7c1266f
+    TypeID: 0
+  - PortName: Who are you talking about?
+    BaseNodeGUID: 3757ffcc-789a-4148-afb6-5c95e7c1266f
+    TargetNodeGUID: cdab940a-3538-4a3b-9568-62feba14ab15
+    TypeID: 0
+  - PortName: Who are the constructors?
+    BaseNodeGUID: cdab940a-3538-4a3b-9568-62feba14ab15
+    TargetNodeGUID: af4d2305-0cf2-4ea0-a8a4-f6043d7500f9
+    TypeID: 0
+  - PortName: Ah! Those constructors! Why afcourse
+    BaseNodeGUID: af4d2305-0cf2-4ea0-a8a4-f6043d7500f9
+    TargetNodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    TypeID: 0
+  - PortName: Indubitably
+    BaseNodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    TargetNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TypeID: 0
+  - PortName: They what?
+    BaseNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TargetNodeGUID: 41bf8f81-b000-4525-9d92-9c192f1d924e
+    TypeID: 0
+  - PortName: Are you ok there?
+    BaseNodeGUID: 3757ffcc-789a-4148-afb6-5c95e7c1266f
+    TargetNodeGUID: dd9234e4-8bfa-488f-8e96-3c063573cb63
+    TypeID: 0
+  - PortName: Well thats good to hear...
+    BaseNodeGUID: dd9234e4-8bfa-488f-8e96-3c063573cb63
+    TargetNodeGUID: c2cd5d44-a2f4-4798-89e8-ee6ec4ed0667
+    TypeID: 0
+  - PortName: You sure bamboozled me there
+    BaseNodeGUID: c2cd5d44-a2f4-4798-89e8-ee6ec4ed0667
+    TargetNodeGUID: b7349252-a86e-4f72-b0e1-7e3aabb297f3
+    TypeID: 0
+  - PortName: The work of what?
+    BaseNodeGUID: b7349252-a86e-4f72-b0e1-7e3aabb297f3
+    TargetNodeGUID: af4d2305-0cf2-4ea0-a8a4-f6043d7500f9
+    TypeID: 0
+  - PortName: What in the world..
+    BaseNodeGUID: 41bf8f81-b000-4525-9d92-9c192f1d924e
+    TargetNodeGUID: 5c4fd077-2211-4b1d-8e79-af2a0417686a
+    TypeID: 0
+  - PortName: Ofcourse its real, were on it right now!
+    BaseNodeGUID: 5c4fd077-2211-4b1d-8e79-af2a0417686a
+    TargetNodeGUID: e7df4189-168a-4517-92f6-f54b8ad56e10
+    TypeID: 0
+  - PortName: But if the constructors made it then..
+    BaseNodeGUID: e7df4189-168a-4517-92f6-f54b8ad56e10
+    TargetNodeGUID: 67af8422-d00c-4dc1-9b09-98717f711094
+    TypeID: 0
+  - PortName: Why?
+    BaseNodeGUID: 67af8422-d00c-4dc1-9b09-98717f711094
+    TargetNodeGUID: c2e9cf7c-fa54-4c16-b744-6b1cdd12a272
+    TypeID: 0
+  - PortName: But youve mentioned them several times!
+    BaseNodeGUID: c2e9cf7c-fa54-4c16-b744-6b1cdd12a272
+    TargetNodeGUID: 96d35521-186f-4eb8-b9f2-d89908d43111
+    TypeID: 0
+  - PortName: No?
+    BaseNodeGUID: 1e01134e-7d0c-4043-9b0c-311f8c17eca6
+    TargetNodeGUID: d7e2f27d-2978-458b-98d1-1af0d77edc01
+    TypeID: 0
+  - PortName: '*Sigh* Ok man, good luck.'
+    BaseNodeGUID: d7e2f27d-2978-458b-98d1-1af0d77edc01
+    TargetNodeGUID: ef866a48-cc6c-4e49-9d14-f505bfcece42
+    TypeID: 0
+  - PortName: Like, many times
+    BaseNodeGUID: 96d35521-186f-4eb8-b9f2-d89908d43111
+    TargetNodeGUID: 1e01134e-7d0c-4043-9b0c-311f8c17eca6
+    TypeID: 0
+  - PortName: I have no idea man!
+    BaseNodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    TargetNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TypeID: 0
+  - PortName: Could you explain it to me again?
+    BaseNodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    TargetNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TypeID: 0
+  - PortName: Construction workers, right?
+    BaseNodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    TargetNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TypeID: 0
+  - PortName: Ah yes! The constructors
+    BaseNodeGUID: b7349252-a86e-4f72-b0e1-7e3aabb297f3
+    TargetNodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    TypeID: 0
+  - PortName: Whats an ant?
+    BaseNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TargetNodeGUID: 41bf8f81-b000-4525-9d92-9c192f1d924e
+    TypeID: 0
+  - PortName: Nice weather today huh
+    BaseNodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    TargetNodeGUID: 41bf8f81-b000-4525-9d92-9c192f1d924e
+    TypeID: 0
+  - PortName: I am confuse
+    BaseNodeGUID: 5c4fd077-2211-4b1d-8e79-af2a0417686a
+    TargetNodeGUID: 2ffb4959-5eb6-4ca3-a115-f7249f4722e2
+    TypeID: 0
+  - PortName: Constructors?
+    BaseNodeGUID: 8055f575-bec0-47b0-9a32-e2ab021045e3
+    TargetNodeGUID: 67af8422-d00c-4dc1-9b09-98717f711094
+    TypeID: 0
+  - PortName: Ok ok! Im listening
+    BaseNodeGUID: 2ffb4959-5eb6-4ca3-a115-f7249f4722e2
+    TargetNodeGUID: 8055f575-bec0-47b0-9a32-e2ab021045e3
+    TypeID: 0
+  - PortName: Ants or something?
+    BaseNodeGUID: 8055f575-bec0-47b0-9a32-e2ab021045e3
+    TargetNodeGUID: 16223277-02f9-472f-9853-eb12ce05cd8f
+    TypeID: 0
+  - PortName: Yes! Constructors!
+    BaseNodeGUID: 16223277-02f9-472f-9853-eb12ce05cd8f
+    TargetNodeGUID: 67af8422-d00c-4dc1-9b09-98717f711094
+    TypeID: 0
+  - PortName: Maybe?
+    BaseNodeGUID: 1e01134e-7d0c-4043-9b0c-311f8c17eca6
+    TargetNodeGUID: d7e2f27d-2978-458b-98d1-1af0d77edc01
+    TypeID: 0
+  - PortName: Aw hell yeah I am!
+    BaseNodeGUID: 1e01134e-7d0c-4043-9b0c-311f8c17eca6
+    TargetNodeGUID: d7e2f27d-2978-458b-98d1-1af0d77edc01
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: 6af2f5b5-02da-4e05-b928-6087600e65c9
+    Position: {x: 504, y: 200}
+    DialogueText: It must be around here somewhere!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 3757ffcc-789a-4148-afb6-5c95e7c1266f
+    Position: {x: 873, y: 200}
+    DialogueText: Shhh! They will hear you!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: cdab940a-3538-4a3b-9568-62feba14ab15
+    Position: {x: 1173, y: 44}
+    DialogueText: Them! The constructors!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: af4d2305-0cf2-4ea0-a8a4-f6043d7500f9
+    Position: {x: 1497, y: -89}
+    DialogueText: You havent heard of the constructors? The creators? THE LIARS?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 8024b577-1dfe-4805-a072-497363f64e66
+    Position: {x: 2124, y: -209}
+    DialogueText: 'then you know why im here! '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 41bf8f81-b000-4525-9d92-9c192f1d924e
+    Position: {x: 3099, y: -271}
+    DialogueText: They will get you too! Run while you can!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: dd9234e4-8bfa-488f-8e96-3c063573cb63
+    Position: {x: 1193, y: 295}
+    DialogueText: Me? Yes im fine.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c2cd5d44-a2f4-4798-89e8-ee6ec4ed0667
+    Position: {x: 1541, y: 308}
+    DialogueText: 'OR AM I? '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 5c4fd077-2211-4b1d-8e79-af2a0417686a
+    Position: {x: 3502, y: -271}
+    DialogueText: THE WORLD? THE WORLD IS NOT REAL!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: e7df4189-168a-4517-92f6-f54b8ad56e10
+    Position: {x: 3891, y: -271}
+    DialogueText: No! It was created by the constructors! Those rascals!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: b7349252-a86e-4f72-b0e1-7e3aabb297f3
+    Position: {x: 1577, y: 152}
+    DialogueText: Bamboozle? That sounds like the work of a constructor!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 61e4577f-4928-4c6b-be3b-67bde9765ae0
+    Position: {x: 2537, y: -271}
+    DialogueText: I hear them in the walls! They crawl like ants on my brain!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 2ffb4959-5eb6-4ca3-a115-f7249f4722e2
+    Position: {x: 3954, y: -150}
+    DialogueText: YOU HAVE TO LISTEN MAN!!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 67af8422-d00c-4dc1-9b09-98717f711094
+    Position: {x: 4476, y: -319}
+    DialogueText: DONT TALK ABOUT THE CONSTRUCTORS!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 8055f575-bec0-47b0-9a32-e2ab021045e3
+    Position: {x: 4261, y: -131}
+    DialogueText: What were we talking about?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 16223277-02f9-472f-9853-eb12ce05cd8f
+    Position: {x: 4603, y: -119}
+    DialogueText: Ah yes! And constructors!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d7e2f27d-2978-458b-98d1-1af0d77edc01
+    Position: {x: 5983, y: -319}
+    DialogueText: Leave now! I must tend to these ants!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ef866a48-cc6c-4e49-9d14-f505bfcece42
+    Position: {x: 6370, y: -319}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c2e9cf7c-fa54-4c16-b744-6b1cdd12a272
+    Position: {x: 4977, y: -319}
+    DialogueText: They must never be mentioned
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 96d35521-186f-4eb8-b9f2-d89908d43111
+    Position: {x: 5399, y: -319}
+    DialogueText: ...
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 1e01134e-7d0c-4043-9b0c-311f8c17eca6
+    Position: {x: 5663, y: -319}
+    DialogueText: Youre trying to trick me!
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas: []
+  ExposedProperties: []

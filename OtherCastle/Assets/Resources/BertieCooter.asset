@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: BertieCooter
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: Its fantastic
+    BaseNodeGUID: f17e0976-3686-48af-958d-8f1bdcb80b7b
+    TargetNodeGUID: 28356dd3-b817-43dd-b0f5-c4e6801cfb71
+    TypeID: 0
+  - PortName: Its aight
+    BaseNodeGUID: f17e0976-3686-48af-958d-8f1bdcb80b7b
+    TargetNodeGUID: 28356dd3-b817-43dd-b0f5-c4e6801cfb71
+    TypeID: 0
+  - PortName: Really?
+    BaseNodeGUID: f17e0976-3686-48af-958d-8f1bdcb80b7b
+    TargetNodeGUID: 28356dd3-b817-43dd-b0f5-c4e6801cfb71
+    TypeID: 0
+  - PortName: It do be like that
+    BaseNodeGUID: 28356dd3-b817-43dd-b0f5-c4e6801cfb71
+    TargetNodeGUID: 068c2d6f-d531-4413-8c9c-ab0ef03cea23
+    TypeID: 0
+  - PortName: Got any secrets?
+    BaseNodeGUID: 068c2d6f-d531-4413-8c9c-ab0ef03cea23
+    TargetNodeGUID: 75d7e406-ad2e-4161-b7e6-576e94fc6b81
+    TypeID: 0
+  - PortName: What?
+    BaseNodeGUID: 75d7e406-ad2e-4161-b7e6-576e94fc6b81
+    TargetNodeGUID: 514e0fef-aaae-4ab6-80d2-d356e09cb72c
+    TypeID: 0
+  - PortName: Uhm.. Thats nice
+    BaseNodeGUID: 514e0fef-aaae-4ab6-80d2-d356e09cb72c
+    TargetNodeGUID: d270855a-c0c5-4ecb-a8bc-70e477d422bc
+    TypeID: 0
+  - PortName: Yes?
+    BaseNodeGUID: d270855a-c0c5-4ecb-a8bc-70e477d422bc
+    TargetNodeGUID: 61af67a2-0ca8-4b97-973f-4ea065905b6c
+    TypeID: 0
+  - PortName: Please?
+    BaseNodeGUID: 61af67a2-0ca8-4b97-973f-4ea065905b6c
+    TargetNodeGUID: daeb2074-e637-4f92-8128-8af5e5ba31bf
+    TypeID: 0
+  - PortName: Thank you
+    BaseNodeGUID: daeb2074-e637-4f92-8128-8af5e5ba31bf
+    TargetNodeGUID: 95a5880e-cc83-4664-8f2d-332f57116655
+    TypeID: 0
+  - PortName: How exciting!
+    BaseNodeGUID: 95a5880e-cc83-4664-8f2d-332f57116655
+    TargetNodeGUID: 47856649-5f1f-4883-a728-964fd2d2c437
+    TypeID: 0
+  - PortName: Cheese
+    BaseNodeGUID: 47856649-5f1f-4883-a728-964fd2d2c437
+    TargetNodeGUID: b97c98a8-0b5a-4d45-93ae-430ea7714fb2
+    TypeID: 0
+  - PortName: Cats
+    BaseNodeGUID: 47856649-5f1f-4883-a728-964fd2d2c437
+    TargetNodeGUID: b97c98a8-0b5a-4d45-93ae-430ea7714fb2
+    TypeID: 0
+  - PortName: Stick
+    BaseNodeGUID: 47856649-5f1f-4883-a728-964fd2d2c437
+    TargetNodeGUID: b97c98a8-0b5a-4d45-93ae-430ea7714fb2
+    TypeID: 0
+  - PortName: Ocean
+    BaseNodeGUID: 47856649-5f1f-4883-a728-964fd2d2c437
+    TargetNodeGUID: 95db7cbc-2dbf-4ce0-aa9b-8be5dfea1f46
+    TypeID: 0
+  - PortName: I am amazing
+    BaseNodeGUID: 95db7cbc-2dbf-4ce0-aa9b-8be5dfea1f46
+    TargetNodeGUID: 625bfbb4-63a6-4aec-89b6-527f8a225b51
+    TypeID: 0
+  - PortName: Can I have the secret now?
+    BaseNodeGUID: 625bfbb4-63a6-4aec-89b6-527f8a225b51
+    TargetNodeGUID: d214d7b3-33a2-4d5b-8a15-eb39664e6aa9
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: d214d7b3-33a2-4d5b-8a15-eb39664e6aa9
+    TargetNodeGUID: 70aa5e2d-7f21-4c40-b287-a97a04e09ba3
+    TypeID: 0
+  - PortName: Thank you sir
+    BaseNodeGUID: 70aa5e2d-7f21-4c40-b287-a97a04e09ba3
+    TargetNodeGUID: c1500e74-8045-41ee-a1d9-ca4ee541cfa4
+    TypeID: 0
+  - PortName: Damn!
+    BaseNodeGUID: b97c98a8-0b5a-4d45-93ae-430ea7714fb2
+    TargetNodeGUID: c4b465bf-d2ed-4201-83b2-647fb282eb78
+    TypeID: 0
+  - PortName: Nah
+    BaseNodeGUID: 95a5880e-cc83-4664-8f2d-332f57116655
+    TargetNodeGUID: 24ad0134-2447-4884-8887-804ea6eb09b1
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: f17e0976-3686-48af-958d-8f1bdcb80b7b
+    Position: {x: 526, y: 200}
+    DialogueText: Man! This a nice ocean!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 28356dd3-b817-43dd-b0f5-c4e6801cfb71
+    Position: {x: 886, y: 200}
+    DialogueText: Yeah! Its like watery and stuff!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 068c2d6f-d531-4413-8c9c-ab0ef03cea23
+    Position: {x: 1274, y: 180}
+    DialogueText: How can I help you fellow looker at ocean?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 75d7e406-ad2e-4161-b7e6-576e94fc6b81
+    Position: {x: 1704, y: 162}
+    DialogueText: Hmm let me check
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 514e0fef-aaae-4ab6-80d2-d356e09cb72c
+    Position: {x: 2023, y: 146}
+    DialogueText: Yes! I do seem to have one secret left
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d270855a-c0c5-4ecb-a8bc-70e477d422bc
+    Position: {x: 2434, y: 146}
+    DialogueText: Want it?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 61af67a2-0ca8-4b97-973f-4ea065905b6c
+    Position: {x: 2690, y: 146}
+    DialogueText: Cant have it!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: daeb2074-e637-4f92-8128-8af5e5ba31bf
+    Position: {x: 2970, y: 146}
+    DialogueText: Ok then.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 95a5880e-cc83-4664-8f2d-332f57116655
+    Position: {x: 3221, y: 146}
+    DialogueText: But you have to solve a riddle first
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 47856649-5f1f-4883-a728-964fd2d2c437
+    Position: {x: 3615, y: 146}
+    DialogueText: What do I like?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: b97c98a8-0b5a-4d45-93ae-430ea7714fb2
+    Position: {x: 3915, y: 88}
+    DialogueText: Wrong!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 95db7cbc-2dbf-4ce0-aa9b-8be5dfea1f46
+    Position: {x: 3879, y: 245}
+    DialogueText: HOW DID YOU KNOW?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 625bfbb4-63a6-4aec-89b6-527f8a225b51
+    Position: {x: 4203, y: 245}
+    DialogueText: Yes you are!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 70aa5e2d-7f21-4c40-b287-a97a04e09ba3
+    Position: {x: 4831, y: 197}
+    DialogueText: Here you go
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c1500e74-8045-41ee-a1d9-ca4ee541cfa4
+    Position: {x: 5101, y: 197}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c4b465bf-d2ed-4201-83b2-647fb282eb78
+    Position: {x: 4171, y: 88}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 24ad0134-2447-4884-8887-804ea6eb09b1
+    Position: {x: 3576, y: 422}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas:
+  - NodeGUID: d214d7b3-33a2-4d5b-8a15-eb39664e6aa9
+    Position: {x: 4513, y: 224}
+    AnswerNodeID: 4
+    AnswerNodeValue: 2
+  ExposedProperties: []

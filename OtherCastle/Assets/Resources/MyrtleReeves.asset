@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: MyrtleReeves
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: 9585c46b-4810-4218-a551-9ecaba12b59a
+    TargetNodeGUID: c7583ed7-98a1-4196-8237-ead6cc0f24ae
+    TypeID: 0
+  - PortName: It is nice library
+    BaseNodeGUID: c7583ed7-98a1-4196-8237-ead6cc0f24ae
+    TargetNodeGUID: f3471b07-722e-442e-8624-e75b8d74d182
+    TypeID: 0
+  - PortName: So can you recommend any books?
+    BaseNodeGUID: f3471b07-722e-442e-8624-e75b8d74d182
+    TargetNodeGUID: c108edaf-7f14-4fe6-b517-45a2b50ccf3e
+    TypeID: 0
+  - PortName: Uhh... Why not?
+    BaseNodeGUID: c108edaf-7f14-4fe6-b517-45a2b50ccf3e
+    TargetNodeGUID: a813734f-4905-4105-b6f1-4a117d1ac414
+    TypeID: 0
+  - PortName: You dont know any books?
+    BaseNodeGUID: a813734f-4905-4105-b6f1-4a117d1ac414
+    TargetNodeGUID: f02e9ee0-890a-47d5-8e76-629b023974c6
+    TypeID: 0
+  - PortName: But youre the librarian?
+    BaseNodeGUID: f02e9ee0-890a-47d5-8e76-629b023974c6
+    TargetNodeGUID: 06d9ba00-86f9-4f40-8fbd-29aed28d94d9
+    TypeID: 0
+  - PortName: And you dont know any books?
+    BaseNodeGUID: 06d9ba00-86f9-4f40-8fbd-29aed28d94d9
+    TargetNodeGUID: 99031050-25b9-42a8-a9ad-8c0db171f618
+    TypeID: 0
+  - PortName: How is that possible?
+    BaseNodeGUID: 99031050-25b9-42a8-a9ad-8c0db171f618
+    TargetNodeGUID: 274fbf55-1ca6-40cb-8830-49411ff6fad2
+    TypeID: 0
+  - PortName: Will you answer it?
+    BaseNodeGUID: 274fbf55-1ca6-40cb-8830-49411ff6fad2
+    TargetNodeGUID: 3d82ba1e-a628-4236-b923-1af5a328dc7e
+    TypeID: 0
+  - PortName: Pretty please?
+    BaseNodeGUID: 3d82ba1e-a628-4236-b923-1af5a328dc7e
+    TargetNodeGUID: 7ba33d88-1111-4a0b-8ff0-9de6d690469b
+    TypeID: 0
+  - PortName: Go on then
+    BaseNodeGUID: 7ba33d88-1111-4a0b-8ff0-9de6d690469b
+    TargetNodeGUID: d2f0a104-dbd0-4773-8fca-d7ee37935142
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: d2f0a104-dbd0-4773-8fca-d7ee37935142
+    TargetNodeGUID: 23329aca-5186-4c07-896d-ff32e765d38f
+    TypeID: 0
+  - PortName: Like ever?
+    BaseNodeGUID: 23329aca-5186-4c07-896d-ff32e765d38f
+    TargetNodeGUID: 59596abf-8c6d-450c-b2b1-888e6ba1fec4
+    TypeID: 0
+  - PortName: Why dont you read any of these?
+    BaseNodeGUID: 59596abf-8c6d-450c-b2b1-888e6ba1fec4
+    TargetNodeGUID: 743c97e7-9d15-4b16-99ee-c752b74bc633
+    TypeID: 0
+  - PortName: How did you read the two books?
+    BaseNodeGUID: 743c97e7-9d15-4b16-99ee-c752b74bc633
+    TargetNodeGUID: c67ccdf4-bf8c-424a-96b5-834dab745abd
+    TypeID: 0
+  - PortName: That sucks
+    BaseNodeGUID: c67ccdf4-bf8c-424a-96b5-834dab745abd
+    TargetNodeGUID: 7192b2c3-6c24-46e4-b54f-a5ff36e39aaa
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: c7583ed7-98a1-4196-8237-ead6cc0f24ae
+    Position: {x: 513, y: 200}
+    DialogueText: Welcome to library
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f3471b07-722e-442e-8624-e75b8d74d182
+    Position: {x: 798, y: 200}
+    DialogueText: Thank you
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c108edaf-7f14-4fe6-b517-45a2b50ccf3e
+    Position: {x: 1182, y: 200}
+    DialogueText: No.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a813734f-4905-4105-b6f1-4a117d1ac414
+    Position: {x: 1509, y: 184}
+    DialogueText: I dont know any
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f02e9ee0-890a-47d5-8e76-629b023974c6
+    Position: {x: 1875, y: 162}
+    DialogueText: No.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 06d9ba00-86f9-4f40-8fbd-29aed28d94d9
+    Position: {x: 2194, y: 136}
+    DialogueText: Yes.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 99031050-25b9-42a8-a9ad-8c0db171f618
+    Position: {x: 2588, y: 57}
+    DialogueText: This is correct
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 274fbf55-1ca6-40cb-8830-49411ff6fad2
+    Position: {x: 2866, y: -4}
+    DialogueText: Good question
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 3d82ba1e-a628-4236-b923-1af5a328dc7e
+    Position: {x: 3155, y: -6}
+    DialogueText: No.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 7ba33d88-1111-4a0b-8ff0-9de6d690469b
+    Position: {x: 3452, y: -39}
+    DialogueText: Ok then
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 23329aca-5186-4c07-896d-ff32e765d38f
+    Position: {x: 4068, y: -27}
+    DialogueText: Ive only read two books
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 59596abf-8c6d-450c-b2b1-888e6ba1fec4
+    Position: {x: 4372, y: -40}
+    DialogueText: Yes.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 743c97e7-9d15-4b16-99ee-c752b74bc633
+    Position: {x: 4734, y: -49}
+    DialogueText: I cant read
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c67ccdf4-bf8c-424a-96b5-834dab745abd
+    Position: {x: 5114, y: -40}
+    DialogueText: I dont remember
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 7192b2c3-6c24-46e4-b54f-a5ff36e39aaa
+    Position: {x: 5459, y: -28}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas:
+  - NodeGUID: d2f0a104-dbd0-4773-8fca-d7ee37935142
+    Position: {x: 3783, y: -39}
+    AnswerNodeID: 4
+    AnswerNodeValue: 1
+  ExposedProperties: []
