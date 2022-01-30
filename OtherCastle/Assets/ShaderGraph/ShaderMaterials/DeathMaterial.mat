@@ -58,7 +58,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _FresnelPower: 6.17
     - _GlowSize: 1.37
-    - _InnerGlowSize: 1
+    - _InnerGlowSize: 6.31
     - _OpaqueCullMode: 2
     - _RenderQueueType: 4
     - _SrcBlend: 1
@@ -82,8 +82,8 @@ Material:
     - _TransparentZWrite: 0
     - _UseShadowThreshold: 0
     - _Wobble: 0.5
-    - _WobbleAmount: 0.009
-    - _WobbleDistance: 0.1
+    - _WobbleAmount: 0.03
+    - _WobbleDistance: 3.21
     - _WobbleFrequency: 0.65
     - _WobbleSpeed: 2.54
     - _ZTestDepthEqualForOpaque: 4
@@ -95,8 +95,8 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 13.286705, g: 59.017693, b: 32.44428, a: 0}
     - _GlowColor: {r: 0.082352936, g: 0.36862746, b: 0.32647172, a: 0}
-    - _InnerGlowColor: {r: 0, g: 3.716747, b: 3.0932002, a: 0}
-    - _InnerGlowPosition: {r: 0, g: 0, b: 0, a: 0}
+    - _InnerGlowColor: {r: 0, g: 0.07604913, b: 0.06330791, a: 0}
+    - _InnerGlowPosition: {r: 0, g: 0.25, b: 0, a: 0}
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6587815551492548492

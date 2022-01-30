@@ -9,8 +9,9 @@ public class Spear : Weapon
 
     // public Vector3 dir => this.transform.forward; 
 
-    void Start()
+    private void Start()
     {
-        // Body.AddForce(transform.forward * throwPower); 
+        print (AttackPower); 
+        Body.AddForce(transform.forward * (AttackPower * 2)); 
     }
 }
