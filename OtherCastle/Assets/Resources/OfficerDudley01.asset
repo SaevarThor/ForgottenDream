@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: OfficerDudley01
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: af309dd0-f6a8-4bac-85b9-eb76bd1abfbc
+    TargetNodeGUID: 34a366f8-8114-4456-92f3-aadcac34f59e
+    TypeID: 0
+  - PortName: 'My reasons are my own. '
+    BaseNodeGUID: 34a366f8-8114-4456-92f3-aadcac34f59e
+    TargetNodeGUID: e817424e-7b75-46dc-80d1-e92d972c1a29
+    TypeID: 0
+  - PortName: 'I am the Slumbering Hider. '
+    BaseNodeGUID: 34a366f8-8114-4456-92f3-aadcac34f59e
+    TargetNodeGUID: 6544a1db-b70b-46c9-8359-7a4f6ff5c021
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: e817424e-7b75-46dc-80d1-e92d972c1a29
+    TargetNodeGUID: 203c636b-eeef-4dcc-8276-c6b256375d08
+    TypeID: 0
+  - PortName: I am here to hide an ancient artifact
+    BaseNodeGUID: 203c636b-eeef-4dcc-8276-c6b256375d08
+    TargetNodeGUID: 393c59a9-8449-41cb-a668-89dffda9b918
+    TypeID: 0
+  - PortName: 'Sounds reasonable. '
+    BaseNodeGUID: 393c59a9-8449-41cb-a668-89dffda9b918
+    TargetNodeGUID: 37f987b0-d4aa-4931-946b-7db324dc76b5
+    TypeID: 0
+  - PortName: ' I Do'
+    BaseNodeGUID: 37f987b0-d4aa-4931-946b-7db324dc76b5
+    TargetNodeGUID: d3b08750-55e9-4f2d-a1ca-c71e710e8cfa
+    TypeID: 0
+  - PortName: I Will Never!
+    BaseNodeGUID: 37f987b0-d4aa-4931-946b-7db324dc76b5
+    TargetNodeGUID: e3540a12-d59d-43fd-a928-636ec79310e5
+    TypeID: 0
+  - PortName: Not even close Baby!
+    BaseNodeGUID: e3540a12-d59d-43fd-a928-636ec79310e5
+    TargetNodeGUID: c0a3b9d1-7de1-46bd-8192-90e25b23084f
+    TypeID: 0
+  - PortName: Thank you
+    BaseNodeGUID: d3b08750-55e9-4f2d-a1ca-c71e710e8cfa
+    TargetNodeGUID: c0a3b9d1-7de1-46bd-8192-90e25b23084f
+    TypeID: 0
+  - PortName: My honor forbids me from sharing the purpose of my visit.
+    BaseNodeGUID: 203c636b-eeef-4dcc-8276-c6b256375d08
+    TargetNodeGUID: 393c59a9-8449-41cb-a668-89dffda9b918
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: 6544a1db-b70b-46c9-8359-7a4f6ff5c021
+    TargetNodeGUID: a66af683-2802-4993-a4f3-fec0384f3774
+    TypeID: 0
+  - PortName: ' I know, I know. It''s an unfortunate name. '
+    BaseNodeGUID: a66af683-2802-4993-a4f3-fec0384f3774
+    TargetNodeGUID: 47a343dc-947d-4331-aeaa-a72c293dc58e
+    TypeID: 0
+  - PortName: I am here to hide an ancient artifact
+    BaseNodeGUID: 47a343dc-947d-4331-aeaa-a72c293dc58e
+    TargetNodeGUID: 393c59a9-8449-41cb-a668-89dffda9b918
+    TypeID: 0
+  - PortName: My honor forbids me from sharing the purpose of my visit.
+    BaseNodeGUID: 47a343dc-947d-4331-aeaa-a72c293dc58e
+    TargetNodeGUID: 393c59a9-8449-41cb-a668-89dffda9b918
+    TypeID: 0
+  - PortName: Hey Soldier
+    BaseNodeGUID: 34a366f8-8114-4456-92f3-aadcac34f59e
+    TargetNodeGUID: bdda8783-90e6-4aa3-a7bb-bc666aa228ce
+    TypeID: 0
+  - PortName: output
+    BaseNodeGUID: bdda8783-90e6-4aa3-a7bb-bc666aa228ce
+    TargetNodeGUID: eaaab522-8813-4918-9106-07217f9a7089
+    TypeID: 0
+  - PortName: You are cool
+    BaseNodeGUID: eaaab522-8813-4918-9106-07217f9a7089
+    TargetNodeGUID: 71ab9c39-453d-4815-8afc-cb9d7c33f904
+    TypeID: 0
+  - PortName: No problemo
+    BaseNodeGUID: 71ab9c39-453d-4815-8afc-cb9d7c33f904
+    TargetNodeGUID: 555cdcee-4beb-4931-b7b3-178519a94115
+    TypeID: 0
+  - PortName: Down with the Monarchy!
+    BaseNodeGUID: eaaab522-8813-4918-9106-07217f9a7089
+    TargetNodeGUID: aef7cb76-27d7-412d-adeb-a12b80aa2906
+    TypeID: 0
+  - PortName: Gottem!
+    BaseNodeGUID: aef7cb76-27d7-412d-adeb-a12b80aa2906
+    TargetNodeGUID: 555cdcee-4beb-4931-b7b3-178519a94115
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: 34a366f8-8114-4456-92f3-aadcac34f59e
+    Position: {x: 613.3333, y: 200}
+    DialogueText: Welcome Traveler, What bring you to our shores
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 203c636b-eeef-4dcc-8276-c6b256375d08
+    Position: {x: 1529.3334, y: 100.666664}
+    DialogueText: I meant to offense, we do not often get visitors and this has made
+      us wary of strangers.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 37f987b0-d4aa-4931-946b-7db324dc76b5
+    Position: {x: 2928.6667, y: 79.33333}
+    DialogueText: 'And you must recognize the authority of the Turtlers Monarchy
+      and their rule over this domain. '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d3b08750-55e9-4f2d-a1ca-c71e710e8cfa
+    Position: {x: 3741.3333, y: 63.33333}
+    DialogueText: Great! Welcome to the domain of the Turtlers
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: e3540a12-d59d-43fd-a928-636ec79310e5
+    Position: {x: 3764, y: 222}
+    DialogueText: Demn! Almost got one
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c0a3b9d1-7de1-46bd-8192-90e25b23084f
+    Position: {x: 4182.6665, y: 162.66667}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 47a343dc-947d-4331-aeaa-a72c293dc58e
+    Position: {x: 1971.3334, y: 290}
+    DialogueText: 'So Slumbering Hider, why are you here?  '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 393c59a9-8449-41cb-a668-89dffda9b918
+    Position: {x: 2460.6667, y: 174}
+    DialogueText: Alright. But while you are here you must abide by our rules.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a66af683-2802-4993-a4f3-fec0384f3774
+    Position: {x: 1517.3334, y: 291.3333}
+    DialogueText: You seem pretty awake to me.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: eaaab522-8813-4918-9106-07217f9a7089
+    Position: {x: 1500.6666, y: 450}
+    DialogueText: Yeah
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 71ab9c39-453d-4815-8afc-cb9d7c33f904
+    Position: {x: 1922.6666, y: 554}
+    DialogueText: uu thanks
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: aef7cb76-27d7-412d-adeb-a12b80aa2906
+    Position: {x: 1922.6666, y: 432.66666}
+    DialogueText: Demn you! You Rapscallion!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 555cdcee-4beb-4931-b7b3-178519a94115
+    Position: {x: 2301.3333, y: 464}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas:
+  - NodeGUID: 6544a1db-b70b-46c9-8359-7a4f6ff5c021
+    Position: {x: 1174.6666, y: 291.3333}
+    AnswerNodeID: 5
+    AnswerNodeValue: 0
+  - NodeGUID: e817424e-7b75-46dc-80d1-e92d972c1a29
+    Position: {x: 1174.6666, y: 102.666664}
+    AnswerNodeID: 5
+    AnswerNodeValue: 0
+  - NodeGUID: bdda8783-90e6-4aa3-a7bb-bc666aa228ce
+    Position: {x: 1170, y: 450}
+    AnswerNodeID: 0
+    AnswerNodeValue: 0
+  ExposedProperties: []

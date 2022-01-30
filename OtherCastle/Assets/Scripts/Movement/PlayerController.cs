@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 	public bool SlideOnTaggedObjects; 
 	public PlayerAttack Attack; 
 	public Interaction Interaction; 
+	public InventoryManager Inventory; 
 
 	public bool CantMove; 
 	
@@ -48,12 +49,15 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake() 
 	{
-		DontDestroyOnLoad(this);
 
 		View = GetComponent<PhotonView>(); 
 
 		if (View.IsMine)
+		{
+			DontDestroyOnLoad(this);
 			_playerActionControler = new PlayerActionControler();	
+			Inventory = new InventoryManager();
+		}
 	}
 
 	// Use this for initialization

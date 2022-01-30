@@ -1,34 +1,31 @@
-﻿using System;
+﻿using System.Runtime.InteropServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Anchry.Dialogue;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
+using TMPro; 
 
 public class Dialogue : MonoBehaviour
 {
     public static Dialogue Instance; 
     public GameObject ConversationObject; 
     private DialogueContainer _currentDialogue; 
-    // private CharacterAttributes _currentAttributes;
-    public Text MainText;
+    public TMP_Text MainText;
+    public TMP_Text NameText;
+    public Image Portrait; 
     public Transform AnswerContainer; 
     public GameObject Answer;
     public AudioSource Source; 
     public bool ActiveDialogue => ConversationObject.activeSelf; 
-
-    // public string PlayerName => GameManager.Instance.CurrentPlayer.PlayerName; 
-    // public string ShipName => GameManager.Instance.CurrentPlayer.ShipName; 
-    
-    // [SerializeField] private ActorContainer _actorContainer; 
-    // [SerializeField] private Text _characterName; 
-    // [SerializeField] private Image _characterImage; 
     private List<Button> ActiveAnswers = new List<Button>();
 
     [Header("Debug")]
     public DialogueContainer TestContainer; 
 
-    private PlayerController _curPlayer; 
+    private PlayerController _currPlayer; 
 
     public enum NodeTypes
     {
@@ -53,13 +50,21 @@ public class Dialogue : MonoBehaviour
         // StartDialogue(TestContainer); 
     }
 
-    public void StartDialogue(DialogueContainer dialogue, PlayerController player)
+    public void StartDialogue(DialogueContainer dialogue, PlayerController player, string characterName, Sprite characterPortrait = null)
     {
-        player.SetMovement(false); 
-
-        _curPlayer = player; 
-
         _currentDialogue = dialogue; 
+        NameText.text = name; 
+
+        if (characterPortrait != null)
+        {
+            Portrait.sprite = characterPortrait; 
+            Portrait.enabled = true; 
+        }
+        else 
+            Portrait.enabled = false; 
+
+        player.SetMovement(false); 
+        _currPlayer = player; 
 
         ConversationObject.SetActive(true); 
         NextDialogue(_currentDialogue.NodeLinks[0].TargetNodeGUID);  
@@ -82,16 +87,16 @@ public class Dialogue : MonoBehaviour
                 SetDialogue(Guid); 
                 break; 
             case NodeTypes.AttributeNode:
-                // RollAttribute(Guid); 
                 break;
             case NodeTypes.AnswerNode:
                 CheckAnswerNode(Guid);
                 break; 
             case NodeTypes.TraitNode:
-                CheckPlayerTrait(Guid); 
+                //End Game
+                SceneManager.LoadScene("Credits");
                 break;
             case NodeTypes.CrewNode:
-                CheckSpeaker(Guid);
+                // CheckSpeaker(Guid);
                 break; 
         }
     }
@@ -123,7 +128,6 @@ public class Dialogue : MonoBehaviour
         bool hasTrait = false; 
 
         //Check if player has trait
-
         if (hasTrait)
             NextDialogue(Options.First(x => x.PortName == "Equipped").TargetNodeGUID);
         else 
@@ -139,14 +143,18 @@ public class Dialogue : MonoBehaviour
 
         // if (nodeData.AnswerNodeID <= 3)
         //     NextDialogue(Options[0].TargetNodeGUID); 
-        
+
+        print ($"Node data id = {nodeData.AnswerNodeID}"); 
+
         switch(nodeData.AnswerNodeID)
         {
             case 4:
                 //Give Item
+                _currPlayer.Inventory.GivePlayerItem(nodeData.AnswerNodeValue); 
                 break;
             case 5:
-                //Give friend score
+                //Give fake item
+                _currPlayer.Inventory.fakeItem.Add(nodeData.AnswerNodeValue); 
                 break; 
         }
         NextDialogue(Options[0].TargetNodeGUID); 
@@ -184,47 +192,6 @@ public class Dialogue : MonoBehaviour
         return NodeTypes.DialougeNode; 
     }
 
-    // private void RollAttribute(string GUID)
-    // {
-    //     var nodeData = _currentDialogue.AttributeNodeDatas.First(x => x.NodeGUID == GUID); 
-    //     // int attributeValue = TranslateAttribute(nodeData.AttributeID); 
-
-    //     Anchry.Dialogue.NodeLinkData[] Options; 
-    //     Options = _currentDialogue.NodeLinks.Where(t => t.BaseNodeGUID == GUID).ToArray();
-        
-    //     int roll = UnityEngine.Random.Range(1,100); 
-
-    //     if (roll > attributeValue)
-    //     {
-    //         NextDialogue(Options.First(x => x.PortName == "Fail").TargetNodeGUID); 
-    //     } else 
-    //         NextDialogue(Options.First(x => x.PortName == "Success").TargetNodeGUID); 
-
-    // }
-
-    // private int TranslateAttribute(int attributeID)
-    // {
-    //     switch(attributeID)
-    //     {
-    //         case 0:
-    //             return _currentAttributes.Strength; 
-    //         case 1:
-    //             return _currentAttributes.Dexterety; 
-    //         case 2: 
-    //             return _currentAttributes.Size; 
-    //         case 3:
-    //             return _currentAttributes.Constitution; 
-    //         case 4:
-    //             return _currentAttributes.Appearance;
-    //         case 5:
-    //             return _currentAttributes.MentalPower; 
-    //         case 6:
-    //             return _currentAttributes.Intelligence; 
-    //     }
-
-    //     return -1; 
-    // }
-
     private bool IsAttributeNode(string GUID)
     {
         if (_currentDialogue.AttributeNodeDatas.FirstOrDefault(x => x.NodeGUID == GUID) != default)
@@ -243,15 +210,19 @@ public class Dialogue : MonoBehaviour
         return false; 
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
         ConversationObject.SetActive(false); 
         MainText.text = ""; 
 
-        _curPlayer.SetMovement(true); 
+        // PlayerController.Instance.TurnOnMovement();
+        _currPlayer.SetMovement(true); 
+        _currPlayer = null; 
 
         for(int i = 0; i < ActiveAnswers.Count; i++)
             Destroy(ActiveAnswers[i].gameObject); 
+        
+        ActiveAnswers.Clear();
    }
 
     private string SetUpDialogueUI(DialogueNodeData nodeData)
@@ -284,7 +255,7 @@ public class Dialogue : MonoBehaviour
 
             string message = answer.PortName;
             Button answerButton = Instantiate(Answer, transform.position, Quaternion.identity, AnswerContainer).GetComponent<Button>();
-            answerButton.GetComponentInChildren<Text>().text = message; 
+            answerButton.GetComponentInChildren<TMP_Text>().text = message; 
             answerButton.onClick.AddListener(delegate{NextDialogue(answer.TargetNodeGUID);});  
             ActiveAnswers.Add(answerButton); 
         }
@@ -297,20 +268,26 @@ public class Dialogue : MonoBehaviour
 
         if (node == default) return true; 
 
-        if (node.AnswerNodeID >= 4)
+        if (node.AnswerNodeID >= 5)
             return true; 
 
         switch(node.AnswerNodeID)
         {
             case 0: 
-                //Check if has friendscore and return accordingly
-                break; 
+                //Check if has fakeItem and return accordingly
+                return _currPlayer.Inventory.fakeItem.Contains(node.AnswerNodeValue); 
+                // return true; 
             case 1:
-                //Check if has Item and return accordingly
-                break;
+                Debug.Log("Checking if has item"); 
+                return _currPlayer.Inventory.HasItem(node.AnswerNodeValue);
             case 2:
                 //Check if has Trait and return accordingly
                 break; 
+            case 3:
+                return true; 
+            case 4: 
+                //Check if already has item. 
+                return !_currPlayer.Inventory.HasItem(node.AnswerNodeValue);
         }
 
         return false; 

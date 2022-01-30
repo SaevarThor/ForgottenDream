@@ -11,14 +11,14 @@ public class Weapon : MonoBehaviour
     public Rigidbody Body; 
     private PhotonView view; 
 
-    public float AttackPower;
+    public float AttackPower = 400;
 
     private void Awake()
     {
         Body = GetComponent<Rigidbody>();
         view = GetComponent<PhotonView>();
 
-        Destroy(this, 1f); 
+        StartCoroutine(WaitAndDie()); 
     }
 
     private void Start()
@@ -32,5 +32,18 @@ public class Weapon : MonoBehaviour
     {
         if (other.tag == "Player" && IsAttacking)
             other.transform.GetComponent<PlayerController>().KillPlayer(view.Owner.NickName, view.Owner.ActorNumber);
+    }
+
+    private IEnumerator WaitAndDie()
+    {
+        yield return new WaitForSeconds(1);
+
+        view.RPC("Die", RpcTarget.AllBuffered); 
+    }
+
+    [PunRPC]
+    private void Die()
+    {
+        Destroy(this.gameObject);
     }
 }
