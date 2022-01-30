@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: End Game
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: b76e220c-2a7e-4af8-8024-562ea1295019
+    TargetNodeGUID: ba3d4c19-204c-441d-86c0-a5de53fdc68e
+    TypeID: 0
+  - PortName: Where Am I?
+    BaseNodeGUID: ba3d4c19-204c-441d-86c0-a5de53fdc68e
+    TargetNodeGUID: 5352dfc1-3ce7-4425-8209-51298c610a12
+    TypeID: 0
+  - PortName: Did I succeed?
+    BaseNodeGUID: 5352dfc1-3ce7-4425-8209-51298c610a12
+    TargetNodeGUID: 5f712a55-f025-47ce-ad3e-634a5dbbdfe4
+    TypeID: 0
+  - PortName: 'Have I failed? '
+    BaseNodeGUID: 5352dfc1-3ce7-4425-8209-51298c610a12
+    TargetNodeGUID: 5f712a55-f025-47ce-ad3e-634a5dbbdfe4
+    TypeID: 0
+  - PortName: Who are you?
+    BaseNodeGUID: ba3d4c19-204c-441d-86c0-a5de53fdc68e
+    TargetNodeGUID: a2622346-95fc-4d68-9829-964493ad4a86
+    TypeID: 0
+  - PortName: Very cool, but why am I here?
+    BaseNodeGUID: a2622346-95fc-4d68-9829-964493ad4a86
+    TargetNodeGUID: 5352dfc1-3ce7-4425-8209-51298c610a12
+    TypeID: 0
+  - PortName: That makes no sense
+    BaseNodeGUID: 5f712a55-f025-47ce-ad3e-634a5dbbdfe4
+    TargetNodeGUID: 9579fd96-0439-4b63-9d26-28ee501decf7
+    TypeID: 0
+  - PortName: I see
+    BaseNodeGUID: 5f712a55-f025-47ce-ad3e-634a5dbbdfe4
+    TargetNodeGUID: 5ecf288a-81f9-4805-9719-056399d5e5dd
+    TypeID: 0
+  - PortName: How long
+    BaseNodeGUID: 9579fd96-0439-4b63-9d26-28ee501decf7
+    TargetNodeGUID: f489eb20-a205-4782-bbda-ab5299dd3be3
+    TypeID: 0
+  - PortName: So what happens now?
+    BaseNodeGUID: 9579fd96-0439-4b63-9d26-28ee501decf7
+    TargetNodeGUID: a8c2a750-5879-41c9-b465-d5bfbb889aeb
+    TypeID: 0
+  - PortName: Nice
+    BaseNodeGUID: f489eb20-a205-4782-bbda-ab5299dd3be3
+    TargetNodeGUID: 6589b129-3832-4892-8671-87c07cf1d6fb
+    TypeID: 0
+  - PortName: Time for what?
+    BaseNodeGUID: 6589b129-3832-4892-8671-87c07cf1d6fb
+    TargetNodeGUID: a8c2a750-5879-41c9-b465-d5bfbb889aeb
+    TypeID: 0
+  - PortName: For how long?
+    BaseNodeGUID: a8c2a750-5879-41c9-b465-d5bfbb889aeb
+    TargetNodeGUID: 9f62e198-761f-4d67-a386-7f4dcc5df0ca
+    TypeID: 0
+  - PortName: What does this  mean for us?
+    BaseNodeGUID: 9f62e198-761f-4d67-a386-7f4dcc5df0ca
+    TargetNodeGUID: fe04dfda-a1b0-43d2-afd9-255c7109134f
+    TypeID: 0
+  - PortName: This Lore is getting wild dude
+    BaseNodeGUID: fe04dfda-a1b0-43d2-afd9-255c7109134f
+    TargetNodeGUID: b700e91b-5635-4f4b-aaaa-1e112199604d
+    TypeID: 0
+  - PortName: '*Slumber*'
+    BaseNodeGUID: b700e91b-5635-4f4b-aaaa-1e112199604d
+    TargetNodeGUID: 7dd8d612-b548-4316-a9ce-ae5c8b6094f9
+    TypeID: 0
+  - PortName: Nahuh I see everything
+    BaseNodeGUID: 5ecf288a-81f9-4805-9719-056399d5e5dd
+    TargetNodeGUID: 5ad5c488-ed41-489e-abb2-31ccc44239bf
+    TypeID: 0
+  - PortName: Time for what?
+    BaseNodeGUID: e96e9140-2aff-443b-8db1-31fdb93b65a3
+    TargetNodeGUID: a8c2a750-5879-41c9-b465-d5bfbb889aeb
+    TypeID: 0
+  - PortName: No. I would never!
+    BaseNodeGUID: 5ad5c488-ed41-489e-abb2-31ccc44239bf
+    TargetNodeGUID: e96e9140-2aff-443b-8db1-31fdb93b65a3
+    TypeID: 0
+  - PortName: Yeah, U dumb
+    BaseNodeGUID: 5ad5c488-ed41-489e-abb2-31ccc44239bf
+    TargetNodeGUID: f922eb31-e2df-450d-a2da-a30ab7943dcf
+    TypeID: 0
+  - PortName: I am sorry my excelence
+    BaseNodeGUID: f922eb31-e2df-450d-a2da-a30ab7943dcf
+    TargetNodeGUID: e96e9140-2aff-443b-8db1-31fdb93b65a3
+    TypeID: 0
+  - PortName: Nah
+    BaseNodeGUID: f922eb31-e2df-450d-a2da-a30ab7943dcf
+    TargetNodeGUID: f9ebd701-ad73-4f26-af92-1ec4aa3ada33
+    TypeID: 0
+  - PortName: I know Queen
+    BaseNodeGUID: f9ebd701-ad73-4f26-af92-1ec4aa3ada33
+    TargetNodeGUID: b10ac456-e98e-4541-b5d0-6052ad5ab743
+    TypeID: 0
+  - PortName: Why is that?
+    BaseNodeGUID: b10ac456-e98e-4541-b5d0-6052ad5ab743
+    TargetNodeGUID: a8c2a750-5879-41c9-b465-d5bfbb889aeb
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: 9579fd96-0439-4b63-9d26-28ee501decf7
+    Position: {x: 2198.6667, y: -1.333334}
+    DialogueText: It will child, give it time
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f489eb20-a205-4782-bbda-ab5299dd3be3
+    Position: {x: 2598, y: -51.333336}
+    DialogueText: I dunno, like 10 minutes
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 6589b129-3832-4892-8671-87c07cf1d6fb
+    Position: {x: 2938.6667, y: -51.333336}
+    DialogueText: But its now time
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a8c2a750-5879-41c9-b465-d5bfbb889aeb
+    Position: {x: 3186, y: 32.666664}
+    DialogueText: You must Slumber again
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 9f62e198-761f-4d67-a386-7f4dcc5df0ca
+    Position: {x: 3578.6667, y: 32.666664}
+    DialogueText: I am afraid no one knows, the world is in unprecedented danger,
+      The Frog God of Death and Despair has been growing in power
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: fe04dfda-a1b0-43d2-afd9-255c7109134f
+    Position: {x: 4514, y: 32.666664}
+    DialogueText: It means all our hope now lies with the Lizards and the Emperor
+      of Scales
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: b700e91b-5635-4f4b-aaaa-1e112199604d
+    Position: {x: 5189.3335, y: 32.666664}
+    DialogueText: You have no idea man
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 7dd8d612-b548-4316-a9ce-ae5c8b6094f9
+    Position: {x: 5548, y: 19.999998}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 5352dfc1-3ce7-4425-8209-51298c610a12
+    Position: {x: 1059.3334, y: 48}
+    DialogueText: This is the end of your journey
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 5f712a55-f025-47ce-ad3e-634a5dbbdfe4
+    Position: {x: 1454.6666, y: 56}
+    DialogueText: Yes and no. You have failed on your quest but succeeded on your
+      journey
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ba3d4c19-204c-441d-86c0-a5de53fdc68e
+    Position: {x: 512.6667, y: 200}
+    DialogueText: Welcome Child
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: a2622346-95fc-4d68-9829-964493ad4a86
+    Position: {x: 768, y: 224}
+    DialogueText: I am Spiritus The Elder God
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 5ecf288a-81f9-4805-9719-056399d5e5dd
+    Position: {x: 2053.3333, y: 132}
+    DialogueText: You see, yet you stay blind to the bigger picture
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 5ad5c488-ed41-489e-abb2-31ccc44239bf
+    Position: {x: 2473.3333, y: 216.66667}
+    DialogueText: ARE YOU QUESTIONING MY WISDOM
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f922eb31-e2df-450d-a2da-a30ab7943dcf
+    Position: {x: 2840.6667, y: 400}
+    DialogueText: I AM NOT DUMB, I AM ETHEREAL, I AM THE LIGHT GIVER AND THE WORLD
+      FEEDER. BOW TO ME!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: e96e9140-2aff-443b-8db1-31fdb93b65a3
+    Position: {x: 2853.3333, y: 132}
+    DialogueText: Good, the time has come
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f9ebd701-ad73-4f26-af92-1ec4aa3ada33
+    Position: {x: 3650.6667, y: 400}
+    DialogueText: Demn! U issa cold hearted bish
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: b10ac456-e98e-4541-b5d0-6052ad5ab743
+    Position: {x: 4016, y: 400}
+    DialogueText: Well it does not matter now
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas: []
+  ExposedProperties: []

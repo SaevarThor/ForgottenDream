@@ -152,6 +152,12 @@ public class PlayerController : MonoBehaviour
 		_grounded = (_controller.Move(_moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
 	}
 
+	public void AttackAnim()
+	{
+		_anim.SetBool("Stab", true); 
+		_anim.SetBool("Stab", false); 
+	}
+
 	private void Jump()
 	{
 		if (!_grounded)
@@ -195,7 +201,19 @@ public class PlayerController : MonoBehaviour
 			print ($"You were killed by {killerName}");
 			PhotonNetwork.Instantiate(_explosion.name, transform.position, transform.rotation); 
 			TeleportPlayer(GamePlayManager.Instance.GetRespawnPoint()); 
+			KilledText.Instnance.SetKillText(killerName); 
 		}
+	}
+
+	public void RemovePlayer()
+	{
+		View.RPC("RemoveOfServer", RpcTarget.AllBuffered); 
+	}
+
+	[PunRPC]
+	private void RemoveOfServer()
+	{
+		Destroy(this.gameObject); 
 	}
 
 	public void TeleportPlayer(Vector3 destination)

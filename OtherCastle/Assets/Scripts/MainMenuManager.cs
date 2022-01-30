@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun; 
+using TMPro; 
+using UnityEngine.UI; 
 
 public class MainMenuManager : MonoBehaviourPunCallbacks
 {
@@ -10,9 +13,14 @@ public class MainMenuManager : MonoBehaviourPunCallbacks
 
     [SerializeField] private string _sceneName = "MainScene"; 
 
+    public TMP_InputField inputs; 
+    public Button Button; 
+    public TMP_Text text; 
+
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings();
+        Button.onClick.AddListener(CheckRoom); 
     }
 
     public override void OnConnectedToMaster()
@@ -20,16 +28,25 @@ public class MainMenuManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinLobby();
     }
 
+    private void CheckRoom()
+    {
+        PhotonNetwork.JoinOrCreateRoom("dank", null, null); 
+
+        if (String.IsNullOrEmpty(inputs.text))
+            PhotonNetwork.LocalPlayer.NickName = names[UnityEngine.Random.Range(0, names.Length)]; 
+        else 
+            PhotonNetwork.LocalPlayer.NickName = inputs.text; 
+    }
+
     public override void OnJoinedLobby()
     {
         print ($"rooms ={PhotonNetwork.CountOfRooms}"); 
-        PhotonNetwork.LocalPlayer.NickName = names[Random.Range(0, names.Length)]; 
-        PhotonNetwork.JoinOrCreateRoom("dank", null, null); 
+        Button.interactable = true; 
     }
 
     private  void Update()
     {
-        print ($"Loading: {PhotonNetwork.LevelLoadingProgress} Client state {PhotonNetwork.NetworkClientState}"); 
+        text.text = $"Client state: {PhotonNetwork.NetworkClientState}"; 
         
     }
 

@@ -44,6 +44,11 @@ public class Dialogue : MonoBehaviour
 			Instance = this; 	
 	}
 
+    void Start()
+    {
+        DontDestroyOnLoad(this.gameObject); 
+    }
+
     [ContextMenu("Test Dialogue")]
     public void TestDialogue()
     {
@@ -216,6 +221,9 @@ public class Dialogue : MonoBehaviour
         MainText.text = ""; 
 
         // PlayerController.Instance.TurnOnMovement();
+
+        _currPlayer.Inventory.CheckForWin(_currPlayer);
+
         _currPlayer.SetMovement(true); 
         _currPlayer = null; 
 
