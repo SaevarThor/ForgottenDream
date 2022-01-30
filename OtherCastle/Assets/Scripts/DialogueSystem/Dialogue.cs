@@ -44,6 +44,11 @@ public class Dialogue : MonoBehaviour
 			Instance = this; 	
 	}
 
+    void Start()
+    {
+        DontDestroyOnLoad(this.gameObject); 
+    }
+
     [ContextMenu("Test Dialogue")]
     public void TestDialogue()
     {

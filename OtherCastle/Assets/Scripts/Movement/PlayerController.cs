@@ -152,6 +152,12 @@ public class PlayerController : MonoBehaviour
 		_grounded = (_controller.Move(_moveDirection * Time.deltaTime) & CollisionFlags.Below) != 0;
 	}
 
+	public void AttackAnim()
+	{
+		_anim.SetBool("Stab", true); 
+		_anim.SetBool("Stab", false); 
+	}
+
 	private void Jump()
 	{
 		if (!_grounded)
