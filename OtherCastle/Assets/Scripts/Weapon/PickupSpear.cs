@@ -14,12 +14,13 @@ public class PickupSpear : MonoBehaviour, IInteractible
 
     public void Interact(PlayerController player)
     {
+        PV = GetComponent<PhotonView>(); 
         player.Attack.PickUpWeapon();
         // spearVisual.SetActive(false); 
         PV.RPC("SetObject", RpcTarget.AllBuffered,false);
         StartCoroutine(WaitAndRespawn()); 
 
-        this.transform.tag = "";
+        this.transform.tag = "Untagged";
     }
 
     [PunRPC]

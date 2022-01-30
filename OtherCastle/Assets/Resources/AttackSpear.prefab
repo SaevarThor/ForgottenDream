@@ -118,6 +118,7 @@ MonoBehaviour:
   attackerName: DragonSkull69
   attackerID: 0
   Body: {fileID: 4824660682554661636}
+  view: {fileID: 701852694536793990}
   AttackPower: 400
 --- !u!54 &4824660682554661636
 Rigidbody:
