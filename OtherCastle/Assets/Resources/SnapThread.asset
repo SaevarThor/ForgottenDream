@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: SnapThread
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: 6b8d5cbb-af98-4f34-ab44-84c82ebc1564
+    TargetNodeGUID: f6a2288f-4c01-46b5-b699-a93a97bed3d9
+    TypeID: 0
+  - PortName: Ok ill do it later
+    BaseNodeGUID: f6a2288f-4c01-46b5-b699-a93a97bed3d9
+    TargetNodeGUID: c75ecd0a-c879-4770-a07a-910ff9249d77
+    TypeID: 0
+  - PortName: I wasnt going to
+    BaseNodeGUID: f6a2288f-4c01-46b5-b699-a93a97bed3d9
+    TargetNodeGUID: c75ecd0a-c879-4770-a07a-910ff9249d77
+    TypeID: 0
+  - PortName: So what are you doing here?
+    BaseNodeGUID: c75ecd0a-c879-4770-a07a-910ff9249d77
+    TargetNodeGUID: da8430d8-51b3-4713-bacf-4a86fc276718
+    TypeID: 0
+  - PortName: What does that mean?
+    BaseNodeGUID: da8430d8-51b3-4713-bacf-4a86fc276718
+    TargetNodeGUID: 0684d3b6-6953-4c32-98d5-83b337f93d94
+    TypeID: 0
+  - PortName: From what?
+    BaseNodeGUID: 0684d3b6-6953-4c32-98d5-83b337f93d94
+    TargetNodeGUID: 9ef26cd9-9180-4cd8-b4ac-2be130e5b278
+    TypeID: 0
+  - PortName: Thieves?
+    BaseNodeGUID: 9ef26cd9-9180-4cd8-b4ac-2be130e5b278
+    TargetNodeGUID: cc4aada9-321c-4023-be0d-346d85ef2504
+    TypeID: 0
+  - PortName: I see
+    BaseNodeGUID: cc4aada9-321c-4023-be0d-346d85ef2504
+    TargetNodeGUID: 71fa7663-6309-44da-86f9-c93d9f55e097
+    TypeID: 0
+  - PortName: Sure, I wont
+    BaseNodeGUID: 71fa7663-6309-44da-86f9-c93d9f55e097
+    TargetNodeGUID: 2c37d4a0-8a1b-4bd8-88f8-2cbf998ca0a9
+    TypeID: 0
+  - PortName: How many copses are there?
+    BaseNodeGUID: 2c37d4a0-8a1b-4bd8-88f8-2cbf998ca0a9
+    TargetNodeGUID: 20cc2891-1b6e-4788-aea0-2182018528ba
+    TypeID: 0
+  - PortName: Youre the guard
+    BaseNodeGUID: 20cc2891-1b6e-4788-aea0-2182018528ba
+    TargetNodeGUID: 4c6e3961-8c30-4e22-96a3-7f96b5b33439
+    TypeID: 0
+  - PortName: You guard them
+    BaseNodeGUID: 4c6e3961-8c30-4e22-96a3-7f96b5b33439
+    TargetNodeGUID: 60778fab-06b7-464d-9fce-762a44e60f4d
+    TypeID: 0
+  - PortName: Youre in charge
+    BaseNodeGUID: 60778fab-06b7-464d-9fce-762a44e60f4d
+    TargetNodeGUID: e7f20681-709c-46a3-bd2b-ddf1ff00a671
+    TypeID: 0
+  - PortName: Yes?
+    BaseNodeGUID: e7f20681-709c-46a3-bd2b-ddf1ff00a671
+    TargetNodeGUID: 7e7123c4-27ee-4a9a-b76d-8a15d974f6e3
+    TypeID: 0
+  - PortName: True I guess
+    BaseNodeGUID: 7e7123c4-27ee-4a9a-b76d-8a15d974f6e3
+    TargetNodeGUID: e98207fe-0d73-486c-a007-38202631cfd1
+    TypeID: 0
+  - PortName: And if ones gone?
+    BaseNodeGUID: e98207fe-0d73-486c-a007-38202631cfd1
+    TargetNodeGUID: 4108dfaf-aa5c-4dda-ba3a-f35a88a893b7
+    TypeID: 0
+  - PortName: Not much of a guard
+    BaseNodeGUID: 4108dfaf-aa5c-4dda-ba3a-f35a88a893b7
+    TargetNodeGUID: 9ee3a271-ed63-40d1-831c-2eee0d61f40e
+    TypeID: 0
+  - PortName: Sorry
+    BaseNodeGUID: 9ee3a271-ed63-40d1-831c-2eee0d61f40e
+    TargetNodeGUID: c4731d07-3844-4b76-a129-9caeb35a24ce
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: c75ecd0a-c879-4770-a07a-910ff9249d77
+    Position: {x: 911, y: 117}
+    DialogueText: Good!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f6a2288f-4c01-46b5-b699-a93a97bed3d9
+    Position: {x: 524, y: 200}
+    DialogueText: Dont touch any of the corpses!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: da8430d8-51b3-4713-bacf-4a86fc276718
+    Position: {x: 1261, y: 89}
+    DialogueText: Im in charge of the corpses
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 0684d3b6-6953-4c32-98d5-83b337f93d94
+    Position: {x: 1622, y: 14}
+    DialogueText: I guard them
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 9ef26cd9-9180-4cd8-b4ac-2be130e5b278
+    Position: {x: 1874, y: -22}
+    DialogueText: Thieves?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: cc4aada9-321c-4023-be0d-346d85ef2504
+    Position: {x: 2122, y: -53}
+    DialogueText: Someone might steal them
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 71fa7663-6309-44da-86f9-c93d9f55e097
+    Position: {x: 2469, y: -101}
+    DialogueText: So please dont steal one
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 2c37d4a0-8a1b-4bd8-88f8-2cbf998ca0a9
+    Position: {x: 2817, y: -149}
+    DialogueText: 'Thanks! '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 20cc2891-1b6e-4788-aea0-2182018528ba
+    Position: {x: 3236, y: -184}
+    DialogueText: How would I know?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 4c6e3961-8c30-4e22-96a3-7f96b5b33439
+    Position: {x: 3519, y: -206}
+    DialogueText: Yes?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 60778fab-06b7-464d-9fce-762a44e60f4d
+    Position: {x: 3805, y: -229}
+    DialogueText: Yes?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: e7f20681-709c-46a3-bd2b-ddf1ff00a671
+    Position: {x: 4111, y: -277}
+    DialogueText: Yes?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 7e7123c4-27ee-4a9a-b76d-8a15d974f6e3
+    Position: {x: 4337, y: -315}
+    DialogueText: Doesnt mean I have any idea whats going on here does it?
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: e98207fe-0d73-486c-a007-38202631cfd1
+    Position: {x: 4832, y: -315}
+    DialogueText: Theres a lot, thats all i need to know
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 4108dfaf-aa5c-4dda-ba3a-f35a88a893b7
+    Position: {x: 5194, y: -315}
+    DialogueText: I would have no idea man
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 9ee3a271-ed63-40d1-831c-2eee0d61f40e
+    Position: {x: 5590, y: -320}
+    DialogueText: Rude
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c4731d07-3844-4b76-a129-9caeb35a24ce
+    Position: {x: 5927, y: -292}
+    DialogueText: Dialogue Node
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas: []
+  ExposedProperties: []
