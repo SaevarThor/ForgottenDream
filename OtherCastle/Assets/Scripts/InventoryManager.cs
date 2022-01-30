@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Photon.Pun; 
 
 public class InventoryManager
 {
@@ -33,10 +34,19 @@ public class InventoryManager
         PlayerItems.Add(item); 
     } 
 
+
+    public void CheckForWin(PlayerController player)
+    {
+        if (PlayerItems.Count == 4)
+        {
+            player.RemovePlayer();
+            PhotonNetwork.LoadLevel("EndGame"); 
+        }
+
+    }
+
     public bool HasItem(int id)
     {
-        // InventoryItem item = Items.FirstOrDefault(c => c.Id == id);
-
         InventoryItem item = PlayerItems.FirstOrDefault(c => c.Id == id); 
 
         if (item == default)

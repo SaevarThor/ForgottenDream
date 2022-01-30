@@ -201,7 +201,19 @@ public class PlayerController : MonoBehaviour
 			print ($"You were killed by {killerName}");
 			PhotonNetwork.Instantiate(_explosion.name, transform.position, transform.rotation); 
 			TeleportPlayer(GamePlayManager.Instance.GetRespawnPoint()); 
+			KilledText.Instnance.SetKillText(killerName); 
 		}
+	}
+
+	public void RemovePlayer()
+	{
+		View.RPC("RemoveOfServer", RpcTarget.AllBuffered); 
+	}
+
+	[PunRPC]
+	private void RemoveOfServer()
+	{
+		Destroy(this.gameObject); 
 	}
 
 	public void TeleportPlayer(Vector3 destination)
