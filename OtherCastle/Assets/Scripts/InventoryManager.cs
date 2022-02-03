@@ -10,15 +10,15 @@ using Photon.Pun;
 public class InventoryManager
 {
     public InventoryItem[] Items;
-    public List<InventoryItem> PlayerItems = new List<InventoryItem>(); 
+    public List<int> PlayerItems = new List<int>(); 
     public List<int> fakeItem = new List<int>(); 
 
 
     public void GivePlayerItem(int id )
     {
-        InventoryItem item = Items.FirstOrDefault(c => c.Id == id);
+        //InventoryItem item = Items.FirstOrDefault(c => c.Id == id);
 
-        if (item == default)
+       /* if (item == default)
         {
             Debug.LogError($"Item with {id} does not exist"); 
             return; 
@@ -27,11 +27,11 @@ public class InventoryManager
         if (PlayerItems.Contains(item))
         {
             Debug.LogError($"Player Already has {item.ItemName}"); 
-        }
+        } */
 
-        Debug.Log($"{item.ItemName} succesfully added to inventory"); 
-
-        PlayerItems.Add(item); 
+       
+        if (!PlayerItems.Contains(id))
+            PlayerItems.Add(id); 
     } 
 
 
@@ -47,12 +47,10 @@ public class InventoryManager
 
     public bool HasItem(int id)
     {
-        InventoryItem item = PlayerItems.FirstOrDefault(c => c.Id == id); 
+        //InventoryItem item = PlayerItems.FirstOrDefault(c => c.Id == id); 
+        return PlayerItems.Contains(id);
 
-        if (item == default)
-            return false; 
-
-        return true; 
+        
     }
 }
 
