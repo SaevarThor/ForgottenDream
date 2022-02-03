@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 	public PlayerAttack Attack; 
 	public Interaction Interaction; 
 	public InventoryManager Inventory; 
+	public StonePuzzle Puzzle; 
 
 	public bool CantMove; 
 	
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
 			DontDestroyOnLoad(this);
 			_playerActionControler = new PlayerActionControler();	
 			Inventory = new InventoryManager();
+			Puzzle = new StonePuzzle();
 		}
 	}
 
