@@ -20,7 +20,7 @@ namespace Anchry.Dialogue
         public Blackboard Blackboard;
         public List<ExposedProperty> ExposedProperties = new List<ExposedProperty>();
         private NodeSearchWindow _searchWindow; 
-        private bool showFoldOut = false;
+        // private bool showFoldOut = false;
         private DialougeEnum _graphEnums = new DialougeEnum();
 
         public DialogueGraphView(EditorWindow window)
@@ -54,11 +54,6 @@ namespace Anchry.Dialogue
 
         private Port GeneratePort(Node node, Direction portDirection, Port.Capacity capacity = Port.Capacity.Single)
         {
-            // Port port = node.InstantiatePort(Orientation.Horizontal, portDirection, capacity, typeof(float)); 
-
-            // DialoguePort dPort = new DialoguePort(port.orientation, port.direction, port.capacity, typeof(float)); 
-
-            // return dPort; 
             return node.InstantiatePort(Orientation.Horizontal, portDirection, capacity, typeof(float)); 
         }
 
@@ -446,6 +441,40 @@ namespace Anchry.Dialogue
             answerNode.SetPosition(new Rect(mousePosition, DefaultNodeSize));
 
             return answerNode; 
+        }
+
+        public void GenereateEndNode(string nodeName, Vector2 mousePosition) => AddElement(CreateEndNode(nodeName, mousePosition));
+
+        public EndNode CreateEndNode(string nodeName, Vector2 mousePosition, int id = -1, int value = -1)
+        {
+            var endNode = new EndNode
+            {
+                title = "End Node",
+                GUID = Guid.NewGuid().ToString()
+            };
+
+            var inputPort = GeneratePort(endNode, Direction.Input, Port.Capacity.Multi); 
+            inputPort.portName = "Input"; 
+            endNode.inputContainer.Add(inputPort); 
+
+            //TODO: Create special style sheet for new node
+            endNode.styleSheets.Add(Resources.Load<StyleSheet>("Node")); 
+
+            var portField = new TextField
+            {
+                name = string.Empty,
+                value = "output",
+                focusable = false
+            };
+
+            endNode.contentContainer.Add(new Label("   ")); 
+            endNode.contentContainer.Add(portField); 
+
+            endNode.RefreshExpandedState();
+            endNode.RefreshPorts();
+            endNode.SetPosition(new Rect(mousePosition, DefaultNodeSize));
+
+            return endNode; 
         }
 
         public void AddChoicePort(NodeProperties dialogueNode, string overriddenPortName = "")

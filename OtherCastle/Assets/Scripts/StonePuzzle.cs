@@ -5,8 +5,10 @@ using UnityEngine;
 public class StonePuzzle
 {
     private int stonesPressed = 0; 
-
     public int AllStones; 
+    public GameObject StoneEnding; 
+    public Ghost Ghost;
+    public GhostPoint ClosestPoint; 
 
 
     public void AddStone()
@@ -16,6 +18,10 @@ public class StonePuzzle
         if (HasAllStones())
         {
             //End Puzzle
+            GameObject.Instantiate(StoneEnding); 
+            Ghost.gameObject.SetActive(true);
+
+            Ghost.Next = ClosestPoint; 
         }
     }
 

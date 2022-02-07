@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 # if UNITY_EDITOR 
@@ -23,6 +24,7 @@ namespace Anchry.Dialogue
         private List<TraitNode> TraitNodes => GetTraitNodes();
         private List<CrewMemberNode> CrewMemberNodes => GetCrewMemberNodes();
         private List<AnswerNode> AnswerNodes => GetAnswerNodes();
+        private List<EndNode> EndNodes => GetEndNodes();
 
         public static GraphSaveUtility GetInstance(DialogueGraphView targetGraphView)
         {
@@ -135,6 +137,11 @@ namespace Anchry.Dialogue
                     }
                 );
             }
+
+            // foreach ( var endNode in )
+            // {
+                
+            // }
 
             return true;     
         }
@@ -466,6 +473,17 @@ namespace Anchry.Dialogue
                     tempList.Add(node as AnswerNode);
             
             return tempList; 
+        }
+
+        public List<EndNode> GetEndNodes()
+        {
+            List<EndNode> tempList = new List<EndNode>();
+
+            foreach (var node in _targetGraphView.nodes.ToList())
+                if (node is EndNode)
+                    tempList.Add(node as EndNode); 
+
+            return tempList;              
         }
 
     #endif

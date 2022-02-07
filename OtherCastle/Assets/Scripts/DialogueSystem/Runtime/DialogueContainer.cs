@@ -14,5 +14,7 @@ namespace Anchry.Dialogue
         public List<TraitNodeData> TraitNodeDatas = new List<TraitNodeData>();
         public List <AnswerNodeData> AnswerNodeDatas = new List<AnswerNodeData>();
         public List<ExposedProperty> ExposedProperties = new List<ExposedProperty>();
+        public List<EndNodeData> EndNodes = new List<EndNodeData>();
+
     }
 }
