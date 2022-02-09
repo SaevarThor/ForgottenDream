@@ -6,6 +6,7 @@ public class GamePlayManager : MonoBehaviour
 {
     public static GamePlayManager Instance; 
     public Transform RespawnPoint; 
+    public GameObject GhostTower;
 
 
     private void Awake()

@@ -5,13 +5,12 @@ using UnityEngine;
 public class StonePuzzle
 {
     private int stonesPressed = 0; 
-    public int AllStones; 
+    private int allStones = 4; 
     public GameObject StoneEnding; 
     public Ghost Ghost;
-    public GhostPoint ClosestPoint; 
 
 
-    public void AddStone()
+    public void AddStone(GhostPoint point)
     {
         stonesPressed ++; 
 
@@ -21,13 +20,13 @@ public class StonePuzzle
             GameObject.Instantiate(StoneEnding); 
             Ghost.gameObject.SetActive(true);
 
-            Ghost.Next = ClosestPoint; 
+            Ghost.Spawn(point);  
         }
     }
 
     public bool HasAllStones()
     {
-        return stonesPressed == AllStones; 
+        return stonesPressed == allStones; 
     }
 
 }

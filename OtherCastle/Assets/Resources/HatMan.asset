@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f8f88dde47c764d94d3ba715cba1f1, type: 3}
+  m_Name: HatMan
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: First Node
+    BaseNodeGUID: e1b39c35-c412-4add-92ad-c62e563872c7
+    TargetNodeGUID: d3d36223-1ffa-4b3b-be3a-6d4f29218ba6
+    TypeID: 0
+  - PortName: Who are you?
+    BaseNodeGUID: d3d36223-1ffa-4b3b-be3a-6d4f29218ba6
+    TargetNodeGUID: 811eb7bb-c304-49f0-9ff8-e2c75a40f3b4
+    TypeID: 0
+  - PortName: What do you mean?
+    BaseNodeGUID: 811eb7bb-c304-49f0-9ff8-e2c75a40f3b4
+    TargetNodeGUID: b8b77b28-b333-48f5-8f44-410e8ec07e4f
+    TypeID: 0
+  - PortName: This makes no sense
+    BaseNodeGUID: b8b77b28-b333-48f5-8f44-410e8ec07e4f
+    TargetNodeGUID: bf2fb5d5-9278-47ec-a780-5b3d04a094c8
+    TypeID: 0
+  - PortName: How will that end the world?
+    BaseNodeGUID: b8b77b28-b333-48f5-8f44-410e8ec07e4f
+    TargetNodeGUID: 7b80c0b7-c748-444d-872c-aa54db77f994
+    TypeID: 0
+  - PortName: What kind of a machine
+    BaseNodeGUID: 7b80c0b7-c748-444d-872c-aa54db77f994
+    TargetNodeGUID: 51508b99-b56d-425b-a219-0a4bd78f21e2
+    TypeID: 0
+  - PortName: Everything?
+    BaseNodeGUID: 51508b99-b56d-425b-a219-0a4bd78f21e2
+    TargetNodeGUID: 8d4ccf88-5e36-4d8e-bdc4-279929a038eb
+    TypeID: 0
+  - PortName: Phew, that was scary
+    BaseNodeGUID: 8d4ccf88-5e36-4d8e-bdc4-279929a038eb
+    TargetNodeGUID: 6cdb1e11-e9f6-4914-a7d2-4b32f5560138
+    TypeID: 0
+  - PortName: Demn
+    BaseNodeGUID: 6cdb1e11-e9f6-4914-a7d2-4b32f5560138
+    TargetNodeGUID: 99208ef4-1dc1-4511-848c-e4eedad6f9c0
+    TypeID: 0
+  - PortName: We have to do something about this!
+    BaseNodeGUID: 99208ef4-1dc1-4511-848c-e4eedad6f9c0
+    TargetNodeGUID: d7d39f92-c97e-463b-ba01-a078e5f6f76c
+    TypeID: 0
+  - PortName: And who is that
+    BaseNodeGUID: d7d39f92-c97e-463b-ba01-a078e5f6f76c
+    TargetNodeGUID: fd8c1f15-c842-4b7e-9c0b-2cd8f56adbc9
+    TypeID: 0
+  - PortName: This sounds like sequel talk
+    BaseNodeGUID: fd8c1f15-c842-4b7e-9c0b-2cd8f56adbc9
+    TargetNodeGUID: ab6b4cdc-ec6f-4d90-8b33-475efeb2535d
+    TypeID: 0
+  - PortName: '*Hum Terminator 2 theme song*'
+    BaseNodeGUID: ab6b4cdc-ec6f-4d90-8b33-475efeb2535d
+    TargetNodeGUID: 2aef6108-83ba-4ca4-92bf-4cfdc6d680cb
+    TypeID: 0
+  - PortName: How will it end?
+    BaseNodeGUID: bf2fb5d5-9278-47ec-a780-5b3d04a094c8
+    TargetNodeGUID: 505733f9-866a-4899-aa18-6e40eb921099
+    TypeID: 0
+  - PortName: Can't we stop it?
+    BaseNodeGUID: bf2fb5d5-9278-47ec-a780-5b3d04a094c8
+    TargetNodeGUID: 505733f9-866a-4899-aa18-6e40eb921099
+    TypeID: 0
+  - PortName: The Frogztecs?
+    BaseNodeGUID: 505733f9-866a-4899-aa18-6e40eb921099
+    TargetNodeGUID: 0a7beae4-7307-4354-9591-71cfeada39e4
+    TypeID: 0
+  - PortName: We must be capable of doing something
+    BaseNodeGUID: 0a7beae4-7307-4354-9591-71cfeada39e4
+    TargetNodeGUID: d7d39f92-c97e-463b-ba01-a078e5f6f76c
+    TypeID: 0
+  - PortName: Why are they desperate?
+    BaseNodeGUID: 0a7beae4-7307-4354-9591-71cfeada39e4
+    TargetNodeGUID: 4675d2e0-e584-46bb-8682-4de4b3fd9614
+    TypeID: 0
+  - PortName: What secret weapon?
+    BaseNodeGUID: 505733f9-866a-4899-aa18-6e40eb921099
+    TargetNodeGUID: 51508b99-b56d-425b-a219-0a4bd78f21e2
+    TypeID: 0
+  - PortName: This is getting hard to follow
+    BaseNodeGUID: 4675d2e0-e584-46bb-8682-4de4b3fd9614
+    TargetNodeGUID: 983149e6-545f-46c9-bbac-48827bbaf940
+    TypeID: 0
+  - PortName: So what do we do now?
+    BaseNodeGUID: 983149e6-545f-46c9-bbac-48827bbaf940
+    TargetNodeGUID: 1b0e29bf-938c-4e93-bc23-9ca438a5f2d7
+    TypeID: 0
+  - PortName: Him who?
+    BaseNodeGUID: 1b0e29bf-938c-4e93-bc23-9ca438a5f2d7
+    TargetNodeGUID: 0703d5da-3d5d-47ad-89c1-e3bd307a58b9
+    TypeID: 0
+  - PortName: Who is that?
+    BaseNodeGUID: 0703d5da-3d5d-47ad-89c1-e3bd307a58b9
+    TargetNodeGUID: fd8c1f15-c842-4b7e-9c0b-2cd8f56adbc9
+    TypeID: 0
+  - PortName: What is this place?
+    BaseNodeGUID: d3d36223-1ffa-4b3b-be3a-6d4f29218ba6
+    TargetNodeGUID: f1a09e1d-525f-4e1a-b851-edd347db73ac
+    TypeID: 0
+  - PortName: and how did end up here?
+    BaseNodeGUID: f1a09e1d-525f-4e1a-b851-edd347db73ac
+    TargetNodeGUID: 53cae264-ca72-4f12-b0da-4681584df282
+    TypeID: 0
+  - PortName: Alright, and who are you?
+    BaseNodeGUID: 53cae264-ca72-4f12-b0da-4681584df282
+    TargetNodeGUID: 811eb7bb-c304-49f0-9ff8-e2c75a40f3b4
+    TypeID: 0
+  - PortName: Oh so you were somewhere else?
+    BaseNodeGUID: 53cae264-ca72-4f12-b0da-4681584df282
+    TargetNodeGUID: 9162ae18-95aa-44fc-a5c7-764f92925c41
+    TypeID: 0
+  - PortName: Sorry about that
+    BaseNodeGUID: 9162ae18-95aa-44fc-a5c7-764f92925c41
+    TargetNodeGUID: c18fdab0-121c-4cd3-b320-a9a1c922f141
+    TypeID: 0
+  - PortName: so, who are you?
+    BaseNodeGUID: c18fdab0-121c-4cd3-b320-a9a1c922f141
+    TargetNodeGUID: 811eb7bb-c304-49f0-9ff8-e2c75a40f3b4
+    TypeID: 0
+  DialogueNodeDatas:
+  - NodeGUID: b8b77b28-b333-48f5-8f44-410e8ec07e4f
+    Position: {x: 1876.6666, y: 82}
+    DialogueText: I sent the last warrior into the frozen skies, to find his way
+      the ancient effigy in order for him to burn it
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 7b80c0b7-c748-444d-872c-aa54db77f994
+    Position: {x: 2648.6667, y: 144}
+    DialogueText: When the Lizartines started harnessing celestial powers the Frogztecs
+      started working on a machine
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 51508b99-b56d-425b-a219-0a4bd78f21e2
+    Position: {x: 3396.6667, y: 144}
+    DialogueText: The Reality Destroyer, a machine the size of mountains and it is
+      capable of destroying everything
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 8d4ccf88-5e36-4d8e-bdc4-279929a038eb
+    Position: {x: 4183.3335, y: 152.66667}
+    DialogueText: 'Well no, not everything. '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 6cdb1e11-e9f6-4914-a7d2-4b32f5560138
+    Position: {x: 4527.3335, y: 152.66667}
+    DialogueText: 'But it will most likely kill you '
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 99208ef4-1dc1-4511-848c-e4eedad6f9c0
+    Position: {x: 4964.6665, y: 152.66667}
+    DialogueText: Demn, indeed young one.... demn indeed.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d7d39f92-c97e-463b-ba01-a078e5f6f76c
+    Position: {x: 5424.6665, y: 152.66667}
+    DialogueText: It's to late for us but there is one who might save us
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: fd8c1f15-c842-4b7e-9c0b-2cd8f56adbc9
+    Position: {x: 5940.6665, y: 152.66667}
+    DialogueText: The Listener
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: ab6b4cdc-ec6f-4d90-8b33-475efeb2535d
+    Position: {x: 6334, y: 152.66667}
+    DialogueText: You're demn right it does
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: bf2fb5d5-9278-47ec-a780-5b3d04a094c8
+    Position: {x: 2648.6667, y: -17.333334}
+    DialogueText: It will and it won't, but know this little one, I did not mean
+      for any of this to happen
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 505733f9-866a-4899-aa18-6e40eb921099
+    Position: {x: 3306.6667, y: -17.333334}
+    DialogueText: The world will end in a fiery blaze as the Frogztecs activate their
+      secret weapon
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 4675d2e0-e584-46bb-8682-4de4b3fd9614
+    Position: {x: 4830.6665, y: -298.6667}
+    DialogueText: You see, the Lizartines found out how to harness celestial power
+      and have gained the upper hand in the war
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 0a7beae4-7307-4354-9591-71cfeada39e4
+    Position: {x: 3984, y: -248.66666}
+    DialogueText: Yes, the Frogztec Empire formerly the most powerful empire in the
+      world, but now they are desperate.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 2aef6108-83ba-4ca4-92bf-4cfdc6d680cb
+    Position: {x: 6770.6665, y: 152.66667}
+    DialogueText: End node
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 811eb7bb-c304-49f0-9ff8-e2c75a40f3b4
+    Position: {x: 891.3333, y: 150}
+    DialogueText: I am the one who helped the Lizartines in their hour of need, which
+      unfortunately means I am the instigator to the end of the world.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 983149e6-545f-46c9-bbac-48827bbaf940
+    Position: {x: 5634.6665, y: -298.6667}
+    DialogueText: You have no idea!
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 1b0e29bf-938c-4e93-bc23-9ca438a5f2d7
+    Position: {x: 5969.3335, y: -298.6667}
+    DialogueText: The only thing we can do, keep waiting for him to arrive
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 0703d5da-3d5d-47ad-89c1-e3bd307a58b9
+    Position: {x: 6470.6665, y: -298.6667}
+    DialogueText: The Chosen one, the one who can save us all
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: d3d36223-1ffa-4b3b-be3a-6d4f29218ba6
+    Position: {x: 565.3333, y: 200}
+    DialogueText: You have found me
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 53cae264-ca72-4f12-b0da-4681584df282
+    Position: {x: 1241.3334, y: 278.66666}
+    DialogueText: You summoned it by pressing the four stones of solitude
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: f1a09e1d-525f-4e1a-b851-edd347db73ac
+    Position: {x: 891.3333, y: 278.66666}
+    DialogueText: It's the Ghost Tower
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: 9162ae18-95aa-44fc-a5c7-764f92925c41
+    Position: {x: 1730.6666, y: 352}
+    DialogueText: Yes. and it was quite painful being summoned here.
+    IsEndNode: 0
+    ActorID: 0
+  - NodeGUID: c18fdab0-121c-4cd3-b320-a9a1c922f141
+    Position: {x: 2190.6667, y: 352}
+    DialogueText: No worries, people press those stones all the time by accident
+    IsEndNode: 0
+    ActorID: 0
+  AttributeNodeDatas: []
+  CrewNodeDatas: []
+  TraitNodeDatas: []
+  AnswerNodeDatas: []
+  ExposedProperties: []
+  EndNodes: []
