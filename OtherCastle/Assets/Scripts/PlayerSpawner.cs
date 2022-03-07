@@ -8,7 +8,6 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
 {
     [SerializeField] private GameObject _player; 
     [SerializeField] private GameObject _manager;
-    [SerializeField]private float loadTimer = 20; 
     
     private void Start()
     {
