@@ -60,6 +60,9 @@ public class PlayerController : MonoBehaviour
 			_playerActionControler = new PlayerActionControler();	
 			Inventory = new InventoryManager();
 			Puzzle = new StonePuzzle();
+
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Confined;
 		}
 	}
 

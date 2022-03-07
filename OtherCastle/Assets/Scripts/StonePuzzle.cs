@@ -7,20 +7,17 @@ public class StonePuzzle
     private int stonesPressed = 0; 
     private int allStones = 4; 
     public GameObject StoneEnding; 
-    public Ghost Ghost;
 
-
-    public void AddStone(GhostPoint point)
+    public void AddStone(GhostPoint point, Ghost ghost, GameObject ghostTower)
     {
         stonesPressed ++; 
 
         if (HasAllStones())
         {
-            //End Puzzle
-            GameObject.Instantiate(StoneEnding); 
-            Ghost.gameObject.SetActive(true);
-
-            Ghost.Spawn(point);  
+            //GameObject.Instantiate(StoneEnding); 
+            ghostTower.SetActive(true); 
+            ghost.gameObject.SetActive(true);
+            ghost.Spawn(point);  
         }
     }
 

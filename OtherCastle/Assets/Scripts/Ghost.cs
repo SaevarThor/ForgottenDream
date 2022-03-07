@@ -18,4 +18,16 @@ public class Ghost : MonoBehaviour
     {
         transform.position = point; 
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.tag == "Player")
+        {
+            if (Next.IsGhostTower)
+                this.gameObject.SetActive(false);
+
+            Teleport(Next.ConnectionPoint.position); 
+            if (Next.ConnectionPoint != null)
+                Next = Next.ConnectionPoint.GetComponent<GhostPoint>();
+        }
+    }
 }

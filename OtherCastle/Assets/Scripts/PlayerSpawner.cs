@@ -16,15 +16,4 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
         Debug.Log($"is connected and ready = {PhotonNetwork.IsConnectedAndReady}, is connected = {PhotonNetwork.IsConnected}, in lobby = {PhotonNetwork.InLobby}, in room = {PhotonNetwork.InRoom}"); 
 
     }
-
-    // private IEnumerator WaitAndSpawn()
-    // {
-    //     yield return new WaitForSeconds(1); 
-    //     if (!PhotonNetwork.IsConnectedAndReady)
-    //     {
-    //         print ("No Connection found"); 
-    //         Instantiate(_player, transform.position, transform.rotation); 
-    //     }
-    // }
-
 }
