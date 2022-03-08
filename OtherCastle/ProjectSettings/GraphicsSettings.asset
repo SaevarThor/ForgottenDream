@@ -39,10 +39,8 @@ GraphicsSettings:
   - {fileID: 16000, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 16001, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 4800000, guid: 8a95675767cdff4429e1abe2778a1f30, type: 3}
-  - {fileID: 4800000, guid: 7bd9a74c0a3251f429b6131c73340f07, type: 3}
-  - {fileID: 4800000, guid: adce0b63bca75a84e9f786201b7d7b0b, type: 3}
-  - {fileID: 4800000, guid: 0c3250378db487848854884ac1f2ec9b, type: 3}
+  - {fileID: -6465566751694194690, guid: 3f4858139d70422458ddf86950f4c8cf, type: 3}
+  - {fileID: -6465566751694194690, guid: 775cd3b71bc918c49a7a8128d34f0d0c, type: 3}
   m_PreloadedShaders: []
   m_PreloadShadersBatchTimeLimit: -1
   m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
@@ -136,6 +134,6 @@ GraphicsSettings:
   m_LightsUseLinearIntensity: 1
   m_LightsUseColorTemperature: 1
   m_DefaultRenderingLayerMask: 257
-  m_LogWhenShaderIsCompiled: 0
+  m_LogWhenShaderIsCompiled: 1
   m_SRPDefaultSettings:
     UnityEngine.Rendering.HighDefinition.HDRenderPipeline: {fileID: 11400000, guid: acc11144f57719542b5fa25f02e74afb, type: 2}

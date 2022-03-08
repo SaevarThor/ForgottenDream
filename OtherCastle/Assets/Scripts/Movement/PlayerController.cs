@@ -191,6 +191,13 @@ public class PlayerController : MonoBehaviour
 		CantMove = !value; 
 		Interaction.CanInteract = value; 
 		Attack.CanAttack = value; 
+
+		Cursor.visible = !value;
+
+		if (value)
+			Cursor.lockState = CursorLockMode.Confined;
+		else 
+			Cursor.lockState = CursorLockMode.None;
 	}
 
 	[ContextMenu("Test Murder")]
