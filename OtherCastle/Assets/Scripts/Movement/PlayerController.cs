@@ -83,7 +83,6 @@ public class PlayerController : MonoBehaviour
 		_speed = WalkSpeed; 
 		_rayDistance = _controller.height * .5f + _controller.radius; 
 		_slideLimit = _controller.slopeLimit - .1f; 
-		// _jumpTimer = AntiBunnyHopFactor; 
 		_jumpTimer = 0; 
 
 		_playerActionControler.Normal.Jump.performed += _ => Jump();
@@ -159,8 +158,11 @@ public class PlayerController : MonoBehaviour
 
 	public void AttackAnim()
 	{
-		_anim.SetBool("Stab", true); 
-		_anim.SetBool("Stab", false); 
+		if (View.IsMine)
+		{
+			_anim.SetBool("Stab", true); 
+			_anim.SetBool("Stab", false); 
+		}
 	}
 
 	private void Jump()
@@ -198,12 +200,6 @@ public class PlayerController : MonoBehaviour
 			Cursor.lockState = CursorLockMode.Confined;
 		else 
 			Cursor.lockState = CursorLockMode.None;
-	}
-
-	[ContextMenu("Test Murder")]
-	public void TestMurder()
-	{
-		KillPlayer("Homo man", 69); 
 	}
 
 	public void KillPlayer(string killerName, int actorID)

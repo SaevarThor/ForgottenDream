@@ -11,7 +11,6 @@ public class Spear : Weapon
 
     private void Start()
     {
-        print (AttackPower); 
         Body.AddForce(transform.forward * (AttackPower * 2)); 
     }
 }

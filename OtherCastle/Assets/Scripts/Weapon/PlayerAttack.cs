@@ -52,9 +52,10 @@ public class PlayerAttack : MonoBehaviour
         Weapon currWeapon = g.GetComponent<Weapon>();
         currWeapon.Attack(2, this);  
 
-        HideWeapon(); 
+        //HideWeapon(); 
+        View.RPC("HideWeapon", RpcTarget.AllBuffered); 
     }
-
+    [PunRPC]
     private void HideWeapon()
     {
         serverSpear.SetActive(false);
@@ -62,6 +63,7 @@ public class PlayerAttack : MonoBehaviour
         HasWeapon = false;
     }
 
+    [PunRPC]
     public void PickUpWeapon()
     {
         serverSpear.SetActive(true); 

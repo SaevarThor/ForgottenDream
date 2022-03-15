@@ -57,8 +57,12 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue(DialogueContainer dialogue, PlayerController player, string characterName, Sprite characterPortrait = null)
     {
+        if (player == null) return;
+
+        
         _currentDialogue = dialogue; 
         NameText.text = characterName; 
+
 
         if (characterPortrait != null)
         {
@@ -221,6 +225,15 @@ public class Dialogue : MonoBehaviour
         MainText.text = ""; 
 
         // PlayerController.Instance.TurnOnMovement();
+        if (_currPlayer == null)
+        {
+            
+            for(int i = 0; i < ActiveAnswers.Count; i++)
+                Destroy(ActiveAnswers[i].gameObject);
+
+            ActiveAnswers.Clear();
+            return;
+        }
 
         _currPlayer.Inventory.CheckForWin(_currPlayer);
 

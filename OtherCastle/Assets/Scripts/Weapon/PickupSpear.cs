@@ -7,10 +7,7 @@ public class PickupSpear : MonoBehaviour, IInteractible
 {
     public GameObject spearVisual; 
     [SerializeField] private float respawnTimer;
-
     public PhotonView PV; 
-
-    
 
     public void Interact(PlayerController player)
     {
@@ -27,6 +24,7 @@ public class PickupSpear : MonoBehaviour, IInteractible
     private void SetObject(bool value)
     {
         spearVisual.SetActive(value); 
+        GetComponent<Collider>().enabled = value; 
 
     }
 
@@ -34,7 +32,7 @@ public class PickupSpear : MonoBehaviour, IInteractible
     private IEnumerator WaitAndRespawn()
     {
         yield return new WaitForSeconds(respawnTimer);
-        spearVisual.SetActive(true); 
+        PV.RPC("SetObject", RpcTarget.AllBuffered, true);
         this.transform.tag = "Interactible"; 
     }
 }

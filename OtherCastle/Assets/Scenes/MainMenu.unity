@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 7211919922476182356, guid: 738bf11803b1479419c93ca9b42de2ad, type: 3}
-  _sceneName: LoadingScene
+  _sceneName: MainScene
   inputs: {fileID: 947191218}
   Button: {fileID: 459989523}
   text: {fileID: 1375009911}

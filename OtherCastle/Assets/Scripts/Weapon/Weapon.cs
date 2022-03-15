@@ -28,7 +28,7 @@ public class Weapon : MonoBehaviourPun
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && IsAttacking)
+        if (other.tag == "Player")
             other.transform.GetComponent<PlayerController>().KillPlayer(view.Owner.NickName, view.Owner.ActorNumber);
     }
 

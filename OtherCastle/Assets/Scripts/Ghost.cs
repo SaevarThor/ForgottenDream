@@ -8,6 +8,8 @@ public class Ghost : MonoBehaviour
 
     public GhostPoint Next; 
 
+    private bool canTeleport = true; 
+
     public void Spawn(GhostPoint point)
     {
         Next = point; 
@@ -20,14 +22,28 @@ public class Ghost : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && canTeleport)
         {
             if (Next.IsGhostTower)
+            {
                 this.gameObject.SetActive(false);
+                return; 
+            }
 
-            Teleport(Next.ConnectionPoint.position); 
-            if (Next.ConnectionPoint != null)
+            if (Next != null && Next.ConnectionPoint != null)
+            {
+                Teleport(Next.ConnectionPoint.position); 
                 Next = Next.ConnectionPoint.GetComponent<GhostPoint>();
+            }
+            canTeleport = false;
+            StartCoroutine(Wait()); 
         }
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f); 
+        canTeleport = true; 
+
     }
 }

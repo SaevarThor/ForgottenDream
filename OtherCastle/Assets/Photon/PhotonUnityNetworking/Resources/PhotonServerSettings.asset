@@ -43,6 +43,8 @@ MonoBehaviour:
   - Die
   - DestroyObject
   - RemoveOfServer
+  - HideWeapon
+  - PickUpWeapon
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
